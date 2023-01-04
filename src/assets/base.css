@@ -1,0 +1,260 @@
+/**************/
+/* Universal */
+/************/
+:root {
+    --fw-b:400;
+    --fw-h:700;
+    --fw-notice:600;
+
+    --font-size-root:16px;
+    --font-size-xs:12px;
+    --font-size-s:16px;
+    --font-size-sm:20px;
+    --font-size-m:24px;
+    --font-size-ml:32px;
+    --font-size-l:40px;
+    --font-size-xl:48px;
+    
+    --font-lh-xs:18px;
+    --font-lh-s:32px;
+    --font-lh-sm:36px;
+    --font-lh-m:39px;
+    --font-lh-ml:48px;
+    --font-lh-l:56px;
+    --font-lh-xl:58px;
+
+    --b-grad:#333;
+
+
+    /* Spacing */
+    --container-pad:0px 16px;
+    --inner-container-pad: 0px 16px;
+    --container-max-w:1728px;
+    --inner-container-max-w: 1344px;
+    --section-pad: 60px;
+    --grid-gap:24px;
+
+    --spacer-unit:16px;
+    --spacer-s:calc(var(--spacer-unit) * 2);
+    --spacer-m:calc(var(--spacer-unit) * 4);
+    --spacer-l:calc(var(--spacer-unit) * 8);
+
+    /* Fonts */
+    --font-body: "Work Sans", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    --font-head: var(--font-body);
+    /* Font Weight */
+    --b-fw: 400;
+    --h-fw: 600;
+    --more-bold: 700;
+    /*Fonts Sizes*/
+    --font-h1-size: 36px; 
+    --font-h2-size: 32px;
+    --font-h3-size: 20px;
+    --font-p-size: 16px;
+    /*Fonts Line Heights*/
+    --font-h1-lh: 56px;
+    --font-h2-lh: 36px;
+    --font-h3-lh: 26px;
+    --font-p-lh: 26px;
+    /*Fonts Shorthand*/
+    --font-h1: var(--h-fw)  var(--font-h1-size) /  var(--font-h1-lh)   var(--font-head);
+    --font-h2: var(--h-fw)  var(--font-h2-size) /  var(--font-h2-lh)   var(--font-head);
+    --font-h3: var(--h-fw)  var(--font-h3-size) /  var(--font-h3-lh)   var(--font-head);
+    --font-p:  var(--b-fw)  var(--font-p-size)  /  var(--font-p-lh)    var(--font-body);
+    
+    /* Buttons */
+    --btn:var(--font-h3);
+    --btn-pad: 4px 8px;
+    
+    /*Environment Colors*/
+    --ec-neutral: #51526f;
+    --ec-success: #00A38D;
+    --ec-fail: #D11257;
+
+     /*Brand Colors*/
+    --b-black: #000000;
+    --b-white: #FFFFFF;
+    --p-dark: var(--b-black);
+    --p-light: var(--b-white);
+
+    /* Brand Color From Prototype */
+    --clr-brand:#280071;
+    --clr-primary:#F7F6FA;
+    --clr-secondary:#E9E5F1;
+    --clr-tertiary:#69B3E7;
+
+    /* Brand color shades */
+    --color-white: #FFFFFF;
+    --color-100: #F5F5F5;
+    --color-200: #EEEEEE;
+    --color-300: #E0E0E0;
+    --color-400: #BDBDBD;
+    --color-500: #9E9E9E;
+    --color-600: #757575;
+    --color-700: #616161;
+    --color-800: #424242;
+    --color-900: #212121;
+    --color-black: #000000;
+
+    /* Background color */
+    --pri-background-color: var(--clr-primary);
+    --sec-background-color: var(--clr-secondary);
+    --ter-background-color: var(--clr-tertiary);
+    
+    /* Text Color */
+    --head-text-color: var(--clr-brand);
+    --pri-text-color: var(--clr-primary);
+    --sec-text-color: var(--clr-secondary);
+    
+    /* Header tag color */
+    --pri-h1-clr: var(--color-black);
+    --sec-h1-clr: var(--color-white);
+    --ter-h1-clr: var(--clr-brand);
+
+    --pri-h2-clr: var(--color-black);
+    --sec-h2-clr: var(--color-white);
+    --ter-h2-clr: var(--clr-brand);
+    
+    /* Button color */
+    --pri-btn-clr: var(--clr-primary);
+    --sec-btn-clr: var(--clr-secondary);
+    
+    /* Button Background Color */
+    --btn-1-background-color: var(--clr-tertiary);
+    
+
+}
+
+/**********************/
+/* VARIABLES APPLIED */
+/********************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Work Sans", "Segoe UI", "Frutiger", "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+html, body {
+  margin:0;
+  padding:0;
+  width:100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+body, p, li, ul, ol {
+    font: var(--font-p);
+}
+body,p,ul,ol,li,span,h1,h2,h3,h4,h5,h6 {
+    /* color: var(--b-white); */
+}
+*::selection {
+  /* background: black;
+  color: white; */
+}
+
+h2, h3 {
+    margin-bottom:4px;
+    color: var(--clr-brand);
+}
+h2+p,h3+p {
+    margin-top:unset;
+}
+h1 {
+    font: var(--font-h1);
+    line-height: var(--font-h1-lh);
+}
+h2 {
+    font: var(--font-h2);
+    margin-bottom:24px;
+    text-align: center;
+    line-height: var(--font-h2-lh);
+}
+h3 {
+    font: var(--font-h3);
+}
+section {
+    box-sizing: border-box;
+    padding-top: var(--section-pad);
+    padding-bottom: var(--section-pad);
+}
+section:not(.navigation) {
+    margin-bottom:var(--spacer-l);
+}
+.container, .inner-container {
+    display:block;
+    width:100%;
+    display: flex;
+    margin: auto;
+}
+.container {
+    padding: var(--container-pad);
+    max-width: var(--container-max-w);
+    text-align: center;
+}
+.inner-container {
+    margin: auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+section.nob-pad {
+    padding-bottom:0px !important;
+    margin-bottom: 0px !important;
+}
+main {
+    max-width:100vw;
+}
+a.img span {
+    height:0;
+    width:0;
+    overflow:hidden;
+}
+
+/* Buttons */
+a.button {
+
+    /* border:4px solid var(--b-black);
+    display:inline-block;
+    padding:var(--btn-pad);
+    background:var(--b-black);
+    text-decoration: none;
+    text-align: center;
+    font:var(--btn);
+    color:var(--b-white);
+    font-weight:var(--more-bold);
+    text-transform:uppercase;
+    transition:150ms;
+    width: 100%; */
+   
+}
+
+/* body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */

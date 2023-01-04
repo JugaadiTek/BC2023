@@ -1,0 +1,72 @@
+<script setup>
+defineProps({
+  optionsliceArtCont:[]
+})
+</script>
+
+<template>
+      <div class="inner-container">
+        <div class="content">
+          <div class="content-block">
+              <div>
+                <h2> {{ optionsliceArtCont.details.tittle}}</h2>
+                <p>{{ optionsliceArtCont.details.discription}}</p>
+                <a href="">Demo</a>
+              </div>
+              <div>
+                <ul v-for="ghoul,index in optionsliceArtCont.details.benlist" :key="index">
+                  <li>
+                    {{ghoul.item}}
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+</template>
+
+<style scoped>
+
+h2{
+  text-align: left;
+}
+ul {
+text-align: center;
+padding: unset;
+}
+a {
+  display: inline-block;
+  border: 4px solid #280071;
+  background-color: #280071;
+  color: #ffffff;
+  border-radius: 4px;
+  margin-top: 10px ;
+  padding: 2px 56px;
+}
+.content-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-self: center;
+  text-align: left;
+}
+.content-block>div:last-child{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  background-color: #e9e5f1;
+  padding: 60px;
+}
+
+@media (max-width: 600px) {
+  .content-block{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .content-block {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+</style>

@@ -1,0 +1,264 @@
+/******************************************/
+/********** UNIVERSAL ON MOBILE **********/
+/****************************************/
+:root {
+
+    /****************/
+    /* Font Basics */
+    /**************/
+    --font-body         :   'Poppins', "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;     
+    --font-head         :   var(--font-body);
+    --font-root-size    :   20px            ;       /* --font-400 */
+    --font-root-lh      :   32px            ;       /* --font-400 */
+
+    /****************/
+    /* Font Weight */
+    /**************/
+    --fw-regu       :   300             ;       /* Regular    */
+    --fw-medi       :   400             ;       /* Medium     */
+ /* --fw-semiBold   :   500             ; */    /* Semibold   */
+    --fw-bold       :   600             ;       /* Bold       */
+ /* --fw-boldTalic  :   700             ; */    /* Boldtalic  */
+ /* --fw-extraBold  :   800             ; */    /* extrabold  */
+ 
+    /*****************/
+    /* Font Size/LH */
+    /***************/
+ /* --font-size-950     :   xxxx;   --font-lh-950   :   xxxx;  */
+ /* --font-size-850     :   xxxx;   --font-lh-850   :   xxxx;  */
+ /* --font-size-750     :   xxxx;   --font-lh-750   :   xxxx;  */
+ /* --font-size-650     :   xxxx;   --font-lh-650   :   xxxx;  */
+ /* --font-size-550     :   xxxx;   --font-lh-550   :   xxxx;  */
+ /* --font-size-450     :   xxxx;   --font-lh-450   :   xxxx;  */
+ /* --font-size-350     :   xxxx;   --font-lh-350   :   xxxx;  */
+ /* --font-size-250     :   xxxx;   --font-lh-250   :   xxxx;  */
+    --font-size-900     :   32px;   --font-lh-900   :   40px;
+    --font-size-800     :   30px;   --font-lh-800   :   40px;
+    --font-size-700     :   26px;   --font-lh-700   :   30px;
+    --font-size-600     :   22px;   --font-lh-600   :   28px;
+    --font-size-500     :   22px;   --font-lh-500   :   26px;
+    --font-size-400     :   20px;   --font-lh-400   :   26px;  /* Thise is the center value we are working from */
+    --font-size-300     :   20px;   --font-lh-300   :   24px;
+    --font-size-200     :   18px;   --font-lh-200   :   30px;
+    --font-size-150     :   16px;   --font-lh-150   :   20px;
+    --font-size-100     :   16px;   --font-lh-100   :   18px;
+    --font-size-50      :   11px;   --font-lh-50    :   16px;
+    
+    /***********/
+    /* Colors */
+    /*********/
+    --brand-black   :   #000000;    --brand-black-rgb   :   0,      0,      0;
+    --brand-white   :   #FFFFFF;    --brand-white-rgb   :   255,    255,    255;
+    
+    --primary       :   #280071;    --primary-rgb-rgb   :   40,     0,      113;
+    --primary-dark  :   #010044;    --primary-dark-rgb  :   1,      0,      44;
+    --primary-light :   #5B2FA0;    --primary-light-rgb :   91,     47,     160;
+    
+    --secondary     :   #69B3E7;    --secondary-rgb     :   105,    179,    231;
+    --secondary-dark:   #2F84B5;    --secondary-dark-rgb:   47,     132,    181;
+    --secondary-light:  #9EE5FF;    --secondary-light-rgb:  158,    229,    255;
+    
+    --accent        :   #8ED6DB;    --accent-rgb        :   142,    214,    219;
+    --accent-dark   :   #67BFC6;    --accent-dark-rgb   :   103,    191,    198;
+    --accent-light  :   #B4ECF0;    --accent-light-rgb  :   180,    236,    240;
+    
+    --bg-layer-100  :   #F7F6FA;    --bg-layer-100-rgb  :   247,    246,    250;
+    --bg-layer-200  :   #F4F3F8;    --bg-layer-200-rgb  :   244,    243,    248;
+    --bg-layer-300  :   #F1EFF6;    --bg-layer-300-rgb  :   241,    239,    246;
+    --bg-layer-400  :   #ECE8F3;    --bg-layer-400-rgb  :   236,    232,    243;
+    --bg-layer-500  :   #EEEBF5;    --bg-layer-500-rgb  :   238,    235,    245;
+    --bg-layer-600  :   #E9E5F1;    --bg-layer-600-rgb  :   233,    229,    241;
+    
+    /* Quick Trasparency, great for dropshadows,boxshadows, image overlays,etc
+    /* --halftransparentprimary:rgba(var(--primary),0.95);
+    --halftransparentprimary:rgba(40,0,113,.95); */
+    
+    --ec-neutral    :   #CECFCB; /* 51526f */
+    --ec-success    :   #00A38D; 
+    --ec-fail       :   #D11257; 
+    
+    /*******************/
+    /* Fonts Computed */
+    /*****************/
+    --font-900: var(--fw-bold)  var(--font-size-900)  /  var(--font-lh--900)   var(--font-body);
+    --font-800: var(--fw-bold)  var(--font-size-800)  /  var(--font-lh--800)   var(--font-body);
+    --font-700: var(--fw-bold)  var(--font-size-700)  /  var(--font-lh--700)   var(--font-body);
+    --font-600: var(--fw-bold)  var(--font-size-600)  /  var(--font-lh--600)   var(--font-body);
+    --font-500: var(--fw-bold)  var(--font-size-500)  /  var(--font-lh--500)   var(--font-body);
+    --font-400: var(--fw-std)   var(--font-size-400)  /  var(--font-lh--400)   var(--font-body);  /* Root/Body/P Size */
+    --font-300: var(--fw-body)  var(--font-size-300)  /  var(--font-lh--300)   var(--font-body);
+    --font-200: var(--fw-bold)  var(--font-size-200)  /  var(--font-lh--200)   var(--font-body);
+    --font-150: var(--fw-std)   var(--font-size-150)  /  var(--font-lh--150)   var(--font-body);
+    --font-100: var(--fw-bold)  var(--font-size-100)  /  var(--font-lh--100)   var(--font-body);
+    --font-50:  var(--fw-body)  var(--font-size-50)   /  var(--font-lh--50)    var(--font-body);
+    
+    /* How The Browser sees these variables. */ /*Each Group is equivelant.*/
+/*  h1 {
+        font:var(--font-900);
+        
+        font:600,48px,56px,"Poppins";
+        
+        font-weight:600;
+        font-size:48px;
+        line-height:56p;
+        font-family:"Poppins";
+    }*/
+
+    /************/
+    /* Spacing */
+    /**********/
+    --spacer-unit   :   16px                        ;
+    --spacer-s      :   calc(var(--spacer-unit) * 2);
+    --spacer-m      :   calc(var(--spacer-unit) * 4);
+    --spacer-l      :   calc(var(--spacer-unit) * 8);
+
+    /************************************/
+    /* Containers and Specific Spacing */
+    /**********************************/
+    --container-pad         :   0px var(--spacer-unit)      ;    /*merging these*/
+    --container-maxWidth    :   calc(var(--spacer-l) * 13)  ;    /* 1728px */
+    --innerContainer-maxWidth:  calc(var(--spacer-l) * 10)  ;    /* 1344px */
+    --section-pad           :   var(--spacer-m);
+    --grid-gap              :   var(--spacer-unit);
+    
+    /* Buttons */
+    --btn                   :   var(--font-h3);     /*Redo*/
+    --btn-pad               :   4px 8px             /*Redo*/
+}
+/******************************************/
+/********** UNIVERSAL ON TABLET **********/
+/****************************************/
+@media(min-width:767px) {
+    :root {
+        /* Fonts */
+        --font-size-900     :   36px;   --font-lh-900   :   44px;
+        --font-size-800     :   32px;   --font-lh-800   :   44px;
+        --font-size-700     :   28px;   --font-lh-700   :   36px;
+        --font-size-600     :   22px;   --font-lh-600   :   32px;
+        --font-size-500     :   22px;   --font-lh-500   :   28px;
+        --font-size-400     :   20px;   --font-lh-400   :   28px;  /* Thise is the center value we are working from */
+        --font-size-300     :   20px;   --font-lh-300   :   24px;
+        --font-size-200     :   18px;   --font-lh-200   :   40px;
+        --font-size-150     :   16px;   --font-lh-150   :   20px;
+        --font-size-100     :   16px;   --font-lh-100   :   18px;
+        --font-size-50      :   11px;   --font-lh-50    :   16px;
+    }
+}
+/******************************************/
+/********** UNIVERSAL ON DESKTOP *********/
+/****************************************/
+@media (min-width:1199px) {
+    :root {
+        /* Fonts */
+        --font-size-900     :   48px;   --font-lh-900   :   56px;
+        --font-size-800     :   40px;   --font-lh-800   :   56px; 
+        --font-size-700     :   32px;   --font-lh-700   :   48px;
+        --font-size-600     :   24px;   --font-lh-600   :   36px;
+        --font-size-500     :   24px;   --font-lh-500   :   32px;
+        --font-size-400     :   20px;   --font-lh-400   :   32px;  /* Thise is the center value we are working from */
+        --font-size-300     :   20px;   --font-lh-300   :   24px; 
+        --font-size-200     :   18px;   --font-lh-200   :   40px;
+        --font-size-150     :   16px;   --font-lh-150   :   20px;
+        --font-size-100     :   16px;   --font-lh-100   :   18px;
+        --font-size-50      :   11px;   --font-lh-50    :   16px;
+    }
+}
+
+/******************************************/
+/****** UNIVERSAL ON HD PER DESIGN *******/
+/****************************************/
+@media (minwidth:1550px) {
+
+}
+
+/**********************************/
+/****** UNIVERSAL OVERIDES *******/
+/********************************/
+html, body          { margin          :0;           padding:0;         width:100%;}
+ul                  { list-style-type : none                                     ;}
+img                 { max-width       : 100%                                     ;}
+main                { max-width       : 100%                                     ;} /*will figure this out */
+div,span,p,li,
+ul,a,section,
+aside,main          { box-sizing      : border-box                               ;}
+a,a:hover,
+a:focus,a:active    { text-decoration : none       ;       color:inherit         ;}
+/**********************/
+/* VARIABLES APPLIED */
+/********************/
+
+/* 
+* Fonts Colors
+* Weights Sizes
+* And Lineheights 
+*/
+.font-900, h1, h2        { font      :    var(--font-900)    ;   color       :   var(--primary-dark) ; }
+.font-800                { font      :    var(--font-800)    ;   color       :   var(--primary-dark) ; }
+.font-700, h3, .card h4  { font      :    var(--font-700)    ;   color       :   var(--primary-dark) ; }
+.font-600, .postfeed h4  { font      :    var(--font-600)    ;   color       :   var(--primary-dark) ; }
+.font-500, a.button.big  { font      :    var(--font-500)    ;   color       :   var(--primary-dark) ; }
+.font-400,
+body, p, li, ul, ol      { font      :    var(--font-400)    ;   color       :   var(--brand-black)  ; }
+.font-300                { font      :    var(--font-300)    ;   color       :   var(--brand-black)  ; }
+.font-200                { font      :    var(--font-200)    ;   color       :   var(--brand-black)  ; }
+.font-150                { font      :    var(--font-150)    ;   color       :   var(--brand-black)  ; }
+.font-100,
+nav li a, a.button,
+a.readmore               { font      :    var(--font-100)    ;   color       :   var(--primary-dark) ; }
+.font-50                 { font      :    var(--font-50)     ;   color       :   var(--primary-dark) ; }
+.span.question           { color     :    var(--primary-dark);   font-weight :   var(--fw-bold)      ; }
+input::placeholder       { color     :    var(--secondary-light)                                     ; }
+
+/* 
+* Sections and section overides 
+*/
+section { padding-top: var(--section-pad) ; padding-bottom: var(--section-pad);}
+
+/* 
+* Dark Sections 
+*/
+section.darkbg h1,
+section.darkbg h2,
+section.darkbg h3,
+section.darkbg h4,
+section.darkbg h5,
+section.darkbg h6,
+section.darkbg p ,
+section.darkbg .font-100, 
+section.darkbg .font-300 {
+    color:var(--bg-layer-100);
+}
+
+/* 
+* Buttons 
+*/
+.button         { background-color  :   var(--primary)       ;    border-color : var(--primary);         border-radius:5px;  border-width:2px;    }
+
+.button.type_01 { background-color  :   var(--primary-light) ;    border-color : var(--primary-light);                                    }
+.button.type_02 { background-color  :   var(--bg-layer-600)  ;    border-color : var(--bg-layer-600);                                       }
+
+a.readmore::after { font-family:Font Awesome 5 Free; Content:"/#3333";display:block;font-size:inherit;}
+
+/* 
+* Containers and
+* Slice level 
+*/
+h2, h3 {margin-bottom:4px;}
+h2+p,h3+p {margin-top:unset;}
+h2 {margin-bottom:24px; text-align: center;}
+
+.container, .inner-container {
+    display:block;
+    width:100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 var(--container-pad);
+    box-sizing: border-box;
+}
+
+.container              { max-width:     var(--container-maxWidth);  }
+.inner-container        { max-width:     var(--innerContainer-maxWidth);}
+
+section.no-pad          { padding-top:   0px;    padding-bottom:0px; }
+section.no-pad-top      { padding-top:   0px;                        }
+section.no-pad-bottom   { padding-bottom:0px;                        }

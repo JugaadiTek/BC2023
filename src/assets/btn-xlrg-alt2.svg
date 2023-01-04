@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="268" height="247" viewBox="0 0 268 247">
+  <defs>
+    <filter id="Rectangle_1232" x="0" y="0" width="268" height="247" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feFlood flood-color="#3d3d5c" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="btn-xlrg-alt" transform="translate(28 28)">
+    <g transform="matrix(1, 0, 0, 1, -28, -28)" filter="url(#Rectangle_1232)">
+      <g id="Rectangle_1232-2" data-name="Rectangle 1232" transform="translate(28 28)" fill="#e9e5f1" stroke="#280071" stroke-width="2">
+        <rect width="196" height="175" rx="4" stroke="none"/>
+        <rect x="1" y="1" width="194" height="173" rx="3" fill="none"/>
+      </g>
+    </g>
+    <g id="Group_1348" data-name="Group 1348" transform="translate(-1075 -9017)">
+      <text id="Suppliers" transform="translate(1173 9154)" fill="#280071" font-size="16" font-family="Poppins-Bold, Poppins" font-weight="700" letter-spacing="0.032em"><tspan x="-40.76" y="0">Suppliers</tspan></text>
+      <text id="_" data-name="" transform="translate(1173 9119)" fill="#280071" font-size="80" font-family="SegoeUI, Segoe UI"><tspan x="-25.82" y="0"></tspan></text>
+    </g>
+  </g>
+</svg>

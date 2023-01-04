@@ -9,7 +9,7 @@ defineProps({
         <div class="content">
           <div class="content-block">
               <div>
-                <h2> {{ optionsliceArtCont.details.tittle}}</h2>
+                <h2> <i class="fa-solid fa-user"></i> {{ optionsliceArtCont.details.tittle}}</h2>
                 <p>{{ optionsliceArtCont.details.discription}}</p>
                 <a href="">Demo</a>
               </div>

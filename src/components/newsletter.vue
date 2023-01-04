@@ -50,4 +50,8 @@ form>span>input {
   padding: 5px;
   margin-top: 10px;
 }
+
+form > span:last-child > input {
+  border: 2px solid var() ;
+}
 </style>

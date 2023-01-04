@@ -14,8 +14,8 @@ defineProps({
                 <a href="">Demo</a>
               </div>
               <div>
-                <ul v-for="ghoul,index in optionsliceArtCont.details.benlist" :key="index">
-                  <li>
+                <ul>
+                  <li v-for="ghoul,index in optionsliceArtCont.details.benlist" :key="index">
                     {{ghoul.item}}
                   </li>
                 </ul>

@@ -13,24 +13,30 @@ defineProps({
   </script>
   
 <template>
-    <div class="container">
-      <figure class="logo menu-item" itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-        <a class="img" href="/" aria-current="page">
-          <span>
-            Go To Home
-          </span>
-          <img itemprop="thumbnail" src="\src\assets\BuyChain-Logo-REV.svg" width="141" height="51"
-          alt="Go To Home" />
-        </a>
-        <figcaption itemprop="caption"></figcaption>
-      </figure>
-      <ul class = "main-nav-links">
-        <li v-for="(options, index) in navbtn" :key="index">
-          <a class="" :href="options.url">{{ options.label }}</a>
-        </li>
-      </ul>
-    </div>
-  </template>
+  <div class="container">
+    <figure class="logo menu-item" itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+      <a class="img" href="/" aria-current="page">
+        <span>
+          Go To Home
+        </span>
+        <img itemprop="thumbnail" src="\src\assets\BuyChain-Logo-REV.svg" width="141" height="51"
+        alt="Go To Home" />
+      </a>
+      <figcaption itemprop="caption"></figcaption>
+    </figure>
+    <ul class = "main-nav-links">
+      <li v-for="(options, index) in navbtn" :key="index">
+        <a class="" :href="options.url">{{ options.label }}</a>
+        <ul v-if="a" >
+          <li v-if="a" v-for="(options, index) in navbtn" :key="index">
+            <a class="" :href="options.url">{{ options.label }}</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <a href="">Demo</a>
+  </div>
+</template>
   
 <style scoped>
 .main-nav-links {
@@ -80,25 +86,27 @@ defineProps({
   }
   
   ul {
-    margin: unset;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   
   li {
     display: inline;
     color: var(--bg-layer-100);
     padding-right: 20px ;
+    vertical-align: middle;
   }
   
-  li:last-child {
-    color: var(--head-text-color);
-    background-color: var(--btn-1-background-color);
-    border: 2px solid var(--btn-1-background-color);
+  div > a {
+    color: var(--primary);
+    background-color: var(--secondary);
+    border: 2px solid var(--secondary);
+    font-weight: var(--fw-bold);
+    height: auto;
     border-radius: 5px;
-    padding: 0.3em 0.6em;
-    margin: 0.3em 0 0.3em 0.3em;
+    padding: 4px 10px;
     
   }
-  
   
   nav {
     display: flex;

@@ -5,27 +5,26 @@ defineProps({
 </script>
 
 <template>
-  <div class="inner-container">
+  <!--<div class="inner-container">
     <div class="content">
-      <div class="content-block">
-        <ul v-for=" tokyo, index in optionsliceCont.boxycontent" :key="index">
-          <li>{{ tokyo.item }}</li>
-        </ul>
-      </div>
+      <div class="content-block">-->
+  <ul>
+    <li v-for="(tokyo, index) in optionsliceCont.boxycontent" :key="index">
+      <span> <i class="fa-solid fa-user"></i> {{ tokyo.item }}</span>
+    </li>
+  </ul>
+  <!--</div>
     </div>
-  </div>
+  </div>-->
 </template>
 
 <style scoped>
-
 .content-block {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;  
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-li{
-  
-}
+li {}
 
 ul {
   margin: unset;
@@ -43,5 +42,29 @@ ul {
   .content-block {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+.optionslice UL {
+  DISPLAY: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  margin: unset;
+  padding: unset;
+  border: 2px solid var(--primary-dark);
+  box-sizing: border-box;
+}
+
+.optionslice UL li {
+  border: 2px solid var(--primary-dark);
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.optionslice UL li span {
+  margin: auto;
+  color: white;
+  text-align: center;
+  font-weight: var(--fw-medi);
+
 }
 </style>

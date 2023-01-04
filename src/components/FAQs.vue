@@ -48,7 +48,7 @@ li {
   background-color: #f1eff6;
 }
 
-li>span:last-of-type {
+li>span:nth-child(2) {
   float: right;
 }
 

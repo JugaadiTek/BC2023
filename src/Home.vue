@@ -21,8 +21,7 @@ const navigations = ref([
     sliceContent: [
       { label: "Solution", url: '' },
       { label: "Resources", url: '' },
-      { label: "About Us", url: '' },
-      { label: "Demo", url: '' }
+      { label: "About Us", url: '' }
     ]
   },
 
@@ -47,7 +46,7 @@ const slices = ref([
 
   {
     component: "hero",
-    alt: ["nogap-top"],
+    alt: ["nogap-top", "darkbg"],
     sliceContent: {
       title: "Made For The Market",
       discription: "BuyChain is the end-to-end supply chain management software built for the LBM industry. We unify and mobilizes your sales, inventory, and banking so that you can meet the demands of an increasingly volatile market.",
@@ -86,7 +85,7 @@ const slices = ref([
   },
   {
     component: "optionslice",
-    alt: [" darkbg"],
+    alt: ["darkbg", "nogap"],
     sliceContent: {
       boxycontent: [
         { item: "Inventory Management" },
@@ -290,7 +289,7 @@ const slices = ref([
 
 <template>
   <header></header>
-  <main class="devh">
+  <main class="devh-">
 
     <!---------------------- NAVIGATION BAR ---------------------->
     <nav class="mainNav nogap darkbg" v-for="navigationbar in navigations">
@@ -306,6 +305,7 @@ const slices = ref([
 
       <!--  style="min-height:80vh; background-image:url('src/assets/BG Blank.jpg');background-size:cover;background-repeat:no-repeat;background-position:center center;"  -->
       <div v-if="slice.component == 'hero'">
+
         <hero :herocont="slice.sliceContent" />
       </div>
 
@@ -347,5 +347,37 @@ const slices = ref([
 </template>
 
 <style>
+.darkbg.hero {
+  background-color: unset;
+}
 
+#section_0.hero {
+  padding-top: var(--section-gap);
+}
+
+.hero .content-block div h2 {
+  text-align: left;
+}
+
+.content .content-block img {
+  margin: auto;
+}
+
+.content .content-block .flex img {
+  width: unset;
+}
+
+.flex {
+  display: flex;
+  max-width: 100%;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.svg-btn-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 </style>

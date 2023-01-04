@@ -46,7 +46,9 @@ h3+p {
 p {
   margin: auto;
 }
-
+div.content-block {
+  text-align: center;
+}
 .content-block>div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -65,6 +67,7 @@ p {
   color: #280071;
   font-weight: bold;
   padding-top: 100px;
+  align-self: center;
 }
 
 .content-block>a {

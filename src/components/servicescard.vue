@@ -14,12 +14,12 @@ defineProps({
         <div>
           <div v-for="(cardcont, index) in servicecardCont.boxycontent" :key="index">
             <p>{{ cardcont.category }}</p>
-            <h3>{{ cardcont.sub_header }}</h3>
+            <h3> <i class="fa-solid fa-user"></i> {{ cardcont.sub_header }}</h3>
             <p>{{ cardcont.sub_discription }}</p>
             <hr>
             <h4>{{ cardcont.subtittle }}</h4>
             <ul v-for="(items, index) in cardcont.list_items" :key="index">
-              <li>{{ items.item }}</li>
+              <li> <i class="fa-solid fa-circle-check"></i> {{ items.item }}</li>
             </ul>
             <div v-for="(btton, index) in cardcont.sub_moduleHotspot" :key="index">
 

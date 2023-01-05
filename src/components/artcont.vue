@@ -36,7 +36,8 @@ defineProps({
   margin: 50px 0px;
   text-align: left;
   align-self: center;
-  overflow: hidden;
+  /* overflow: hidden; */
+  padding: 10px ;
 }
 
 img {

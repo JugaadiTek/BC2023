@@ -1,4 +1,4 @@
-<script setup>
+<script setup >
 import NavBar from "./components/NavBar.vue";
 import hero from "./components/hero.vue";
 import newsletter from "./components/newsletter.vue";
@@ -11,6 +11,7 @@ import optionsliceArt from "./components/optionsliceArt.vue";
 import Postfeed from "./components/postfeed.vue";
 import split_ImgTxt from "./components/split_ImgTxt.vue";
 import footerSlice from "./components/footerSlice.vue";
+import rawhtml from "./components/rawhtml.vue";
 
 import { ref } from 'vue';
 
@@ -277,6 +278,11 @@ const slices = ref([
       }
     ]
   },
+  {
+    component: "rawhtml"
+
+  },
+
   {
     component: "singleimage",
     devnotes: {
@@ -638,6 +644,8 @@ const slices = ref([
       <NavBar :navbtn="navigationbar.sliceContent" />
     </nav>
 
+    
+
 
 
     <!---<div class="wrapper">-->
@@ -650,6 +658,10 @@ const slices = ref([
 
       <div v-else-if="slice.component == 'split_ImgTxt'">
         <split_ImgTxt :herocont="slice.sliceContent" />
+      </div>
+
+      <div v-else-if="slice.component == 'rawhtml'">
+        <rawhtml/>
       </div>
 
       <div :class="container" v-else-if="slice.component == 'optionsliceArt'">

@@ -107,5 +107,10 @@ a{
     "",
     "",
     "",
+  ],
+  "json data structure":[
+    "in chrome one object outputs 2 objects"
+    "it works well in firefox until you refresh"
   ]
+  
 }]

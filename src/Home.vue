@@ -21,10 +21,10 @@ const navigations = ref([
   {
     component: "NavBar",
     logo: {
-      type:"svg/img/text",
-      text:"",
-      altText:"",
-      logoFill:"",
+      type: "svg/img/text",
+      text: "",
+      altText: "",
+      logoFill: "",
     },
     alt: ["nogap", "darkbg"],
     sliceContent: [
@@ -34,12 +34,12 @@ const navigations = ref([
     ],
     buttons: [
       {
-        type:"",
-        text:"",
-        url:"",
-        alt:[""],
-        external:true,
-        rel:[""]
+        type: "",
+        text: "",
+        url: "",
+        alt: [""],
+        external: true,
+        rel: [""]
       }
     ]
   },
@@ -294,7 +294,7 @@ const slices = ref([
     },
     imageurl: "url",
     altText: "randommtext",
-    linkurl:""
+    linkurl: ""
 
   },
   {
@@ -315,38 +315,39 @@ const slices = ref([
           discription: "description example",
           sub_moduleHotspot: [
             {
-              type: "buttons", alt: [""], buttonlist: 
-              [
-                { url: "https://placekitten.com/640/360", text: "text 1", type: ["alt1", "class3", "animationX"] },
-                { url: "https://placekitten.com/640/360", text: "text 1", type: ["alt1", "class3", "animationX"] },
-                { url: "https://placekitten.com/640/360", text: "text 1", type: ["alt1", "class3", "animationX"] }
-              ]
+              type: "buttons", alt: [""], buttonlist:
+                [
+                  { url: "https://placekitten.com/640/360", text: "text 1", type: ["alt1", "class3", "animationX"] },
+                  { url: "https://placekitten.com/640/360", text: "text 1", type: ["alt1", "class3", "animationX"] },
+                  { url: "https://placekitten.com/640/360", text: "text 1", type: ["alt1", "class3", "animationX"] }
+                ]
             },
             //, devnotes: { modules: [3, 0], note: "always 3 icon buttons" }
             {
               type: "iconbutton", alt: [""], devnotes: {
-                modules: [3, 0], note: "always 3 icon buttons"}, buttonlist: 
-             [
-                { 
-                  url: "https://placekitten.com/640/360", iconurl: "/url", altText: "text", 
-                  type: ["alt1", "class3", "animationX"] 
-                },
-                { 
-                  url: "https://placekitten.com/640/360", iconurl: "/url", altText: "text", 
-                  type: ["alt1", "class3", "animationX"] 
-                },
+                modules: [3, 0], note: "always 3 icon buttons"
+              }, buttonlist:
+                [
+                  {
+                    url: "https://placekitten.com/640/360", iconurl: "/url", altText: "text",
+                    type: ["alt1", "class3", "animationX"]
+                  },
+                  {
+                    url: "https://placekitten.com/640/360", iconurl: "/url", altText: "text",
+                    type: ["alt1", "class3", "animationX"]
+                  },
                   {
                     url: "https://placekitten.com/640/360", iconurl: "https://placekitten.com/640/360", altText: "text",
                     type: ["alt1", "class3", "animationX"]
                   }
-              ]
+                ]
             }
           ]
         }
       ],
       imageurl: "https://placekitten.com/640/360",
       imaAbs: [
-        {imgabUrl:"",top:0,left:0,height:"",width:""},
+        { imgabUrl: "", top: 0, left: 0, height: "", width: "" },
       ]
     }
   },
@@ -405,20 +406,20 @@ const slices = ref([
     sliceContent: {
       details: {
         tittle: "Inventory Management",
-        icon:"fontawesomeIcon",
+        icon: "fontawesomeIcon",
         discription: "Our system eliminates time now spent on internal cross-checking by providing all stakeholders real-time inventory data, informing both purchasing and sales on what to buy and what is available to sell. ",
         //benlist: [[{ icon: "fontawesomeIcon", item: "Benifit" }], [{ icon: "fontawesomeIcon", item: "Benifit" }]] 
-        benlist: [ 
-          { icon:"fontawesomeIcon", item: "Benifit" },
-          { icon:"fontawesomeIcon", item: "Benifit" },
-          { icon:"fontawesomeIcon", item: "Benifit" },
-          { icon:"fontawesomeIcon", item: "Benifit" },
-          { icon:"fontawesomeIcon", item: "Benifit" },
-          { icon:"fontawesomeIcon", item: "Benifit" },
-          { icon:"fontawesomeIcon", item: "Benifit" },
-          { icon:"fontawesomeIcon", item: "Benifit" },
-          { icon:"fontawesomeIcon", item: "Benifit" },
-          { icon:"fontawesomeIcon", item: "Benifit" }
+        benlist: [
+          { icon: "fontawesomeIcon", item: "Benifit" },
+          { icon: "fontawesomeIcon", item: "Benifit" },
+          { icon: "fontawesomeIcon", item: "Benifit" },
+          { icon: "fontawesomeIcon", item: "Benifit" },
+          { icon: "fontawesomeIcon", item: "Benifit" },
+          { icon: "fontawesomeIcon", item: "Benifit" },
+          { icon: "fontawesomeIcon", item: "Benifit" },
+          { icon: "fontawesomeIcon", item: "Benifit" },
+          { icon: "fontawesomeIcon", item: "Benifit" },
+          { icon: "fontawesomeIcon", item: "Benifit" }
         ]
       }
     }
@@ -518,8 +519,8 @@ const slices = ref([
     sliceContent: {
       tittle: "FAQs",
       items_list: [
-        { question: "how to sjsdjfosijfooj kjdfglk fdgjl ?", icon:"fontawesomeIcon", content: "randomtext" },
-        { question: "how to sjsdjfosijfooj kjdfglk fdgjl ?", icon:"fontawesomeIcon", content: "randomtext" }
+        { question: "how to sjsdjfosijfooj kjdfglk fdgjl ?", icon: "fontawesomeIcon", content: "randomtext" },
+        { question: "how to sjsdjfosijfooj kjdfglk fdgjl ?", icon: "fontawesomeIcon", content: "randomtext" }
       ]
     }
 
@@ -558,10 +559,10 @@ const slices = ref([
           category: " ",
           subtittle: "popular features",
           list_items: [
-            { icon:"fontawesomeIcon", item: "Feature" },
-            { icon:"fontawesomeIcon", item: "Feature" },
-            { icon:"fontawesomeIcon", item: "Feature" },
-            { icon:"fontawesomeIcon", item: "Feature" }
+            { icon: "fontawesomeIcon", item: "Feature" },
+            { icon: "fontawesomeIcon", item: "Feature" },
+            { icon: "fontawesomeIcon", item: "Feature" },
+            { icon: "fontawesomeIcon", item: "Feature" }
           ],
           sub_moduleHotspot: {
             type: "buttons",
@@ -586,10 +587,10 @@ const slices = ref([
           category: "BETA",
           subtittle: "popular features",
           list_items: [
-            { icon:"fontawesomeIcon", item: "Feature" },
-            { icon:"fontawesomeIcon", item: "Feature" },
-            { icon:"fontawesomeIcon", item: "Feature" },
-            { icon:"fontawesomeIcon", item: "Feature" }
+            { icon: "fontawesomeIcon", item: "Feature" },
+            { icon: "fontawesomeIcon", item: "Feature" },
+            { icon: "fontawesomeIcon", item: "Feature" },
+            { icon: "fontawesomeIcon", item: "Feature" }
           ],
           btns: [
             { btntxt: "learn more", url: "https://www.w3schools.com/js/js_json_syntax.asp " },
@@ -603,10 +604,10 @@ const slices = ref([
           category: "FREE",
           subtittle: "popular features",
           list_items: [
-            { icon:"fontawesomeIcon", item: "Feature" },
-            { icon:"fontawesomeIcon", item: "Feature" },
-            { icon:"fontawesomeIcon", item: "Feature" },
-            { icon:"fontawesomeIcon", item: "Feature" }
+            { icon: "fontawesomeIcon", item: "Feature" },
+            { icon: "fontawesomeIcon", item: "Feature" },
+            { icon: "fontawesomeIcon", item: "Feature" },
+            { icon: "fontawesomeIcon", item: "Feature" }
           ],
           btns: [
             { btntxt: "go to dash board", url: " " }
@@ -625,9 +626,9 @@ const slices = ref([
       ]
     },
     alt: ["nogap-bottom", "lavanderbg"],
-    embedCode:"",
-    shortcode:"",
-    content:""
+    embedCode: "",
+    shortcode: "",
+    content: ""
   }
 
 ])
@@ -644,7 +645,7 @@ const slices = ref([
       <NavBar :navbtn="navigationbar.sliceContent" />
     </nav>
 
-    
+
 
 
 
@@ -661,7 +662,7 @@ const slices = ref([
       </div>
 
       <div v-else-if="slice.component == 'rawhtml'">
-        <rawhtml/>
+        <rawhtml />
       </div>
 
       <div :class="container" v-else-if="slice.component == 'optionsliceArt'">
@@ -689,7 +690,7 @@ const slices = ref([
       </div>
 
       <div :class="container" v-else-if="slice.component == 'newsletter'">
-        <newsletter/>
+        <newsletter />
       </div>
 
     </section>
@@ -698,7 +699,7 @@ const slices = ref([
   <!-- ----------------------------- FOOTER ----------------------------- -->
 
   <footer class="container">
-    <footerSlice/>
+    <footerSlice />
   </footer>
 
 

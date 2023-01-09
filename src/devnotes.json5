@@ -1,0 +1,32 @@
+    // herocont.contentBlocks.0.sub_moduleHotspot.1.buttonlist.0.iconurl
+[
+    {
+        hero            :   [   01,     09,     13,     25,     06,     22,     31,     34,     38,     40,     43      ],
+        split_ImageText :   [   03,     11,     14,     18,     20,     37      ],
+        new             :   [   04,     19,     28      ],
+        optionslice     :   [   15,     38a,  1       ],
+        optionsliceArt  :   [   16      ],
+        artcont         :   [   05,     10,     17,     27      ], 
+        postfeed        :   [   07,     23,     32,     35,     39,     44      ], 
+        FAQsf           :   [   21,     30,     42      ], 
+        servicecard     :   [   02,     12,     29      ], 
+        newsletter      :   [   08,     24,     33,     36,     45      ], 
+        new             :   [   26      ]
+    },
+    [
+        {  
+            herobanners:                        "need to be different if section =section_0 or anything else",  
+            powertoolsherobanner:                "3/4ths section",  
+            ctaHero:                            "actually quptes fml",  
+            a:                                    "image section animats",  
+            b:                                    "contact us pages need to be done",  
+            category post listing pages:        "post listing section not done. 39".,  
+            datadashboards is still a thing:    "dont fucking forget that.",  
+            
+            broken vue slices:      [   "splitImgText",              "optionSlice vue needs <a hef=""></a> added to it fml"             ],  
+            css missing:            [   "optionsSliceArticle",       "responsiveCSS"                                                    ],  
+            slice missing:          [   "footer-vue is not done.",   "wysiwyg"                          "dev_wysiwyg",                  ],   
+            piece Missing:          [   "corner image not in vue, for post feed and service cards",     "nav Dropdown Menus vue",       ]        
+        }
+    ]
+]

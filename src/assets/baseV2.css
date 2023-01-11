@@ -44,7 +44,7 @@
     ╔╾VARIABLE NAME┈╼╤╾COLOR HEX┈╼╤╾┈┈VARIABLE NAME┈┈┈╼╤╾ R┈╼╤╾┈G╼╤╾B╼╗ */
     --brand-black    : #000000; --brand-black-rgb    :   0,   0,   0;
     --brand-white    : #FFFFFF; --brand-white-rgb    : 255, 255, 255;
- /* ╔╾┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈PRIMARY┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼╗ */
+ /* 0000╔╾┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈PRIMARY┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼╗ */
     --primary        : #280071; --primary-rgb-rgb    :  40,   0, 113;
     --primary-dark   : #010044; --primary-dark-rgb   :   1,   0,  44;
     --primary-light  : #5B2FA0; --primary-light-rgb  :  91,  47, 160;

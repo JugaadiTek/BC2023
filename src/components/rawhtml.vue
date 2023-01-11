@@ -40,8 +40,8 @@ export default {
             <h1>{{items}}</h1>
             <p></p>
           </div> -->
-          <ul v-for=" (item, index) in items.data.translations" :key="index">
-            <li > {{item.body}} </li> 
+          <ul v-for=" (item, index) in items" :key="index">
+            <li > {{item}} </li> 
             <!-- <li>{{ item }}</li> -->
           </ul>
         </div>

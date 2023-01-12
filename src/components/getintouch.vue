@@ -20,35 +20,35 @@ defineProps({
             <label for="workemail">Work Email</label>
             <input type="text" id="workemail" name="workemail">
 
-            <label for="Tittle">Tittle</label>
-            <input type="text" id="Tittle" name="Tittle">
+            <label for="title">title</label>
+            <input type="text" id="title" name="title">
 
             <input type="submit" value="send">
           </form> -->
 
           <form action="">
-          <div>
-            <label for="fname">First name</label>
-            <input type="text" id="fname" name="fname">
-          </div>
+            <div>
+              <label for="fname">First name</label>
+              <input type="text" id="fname" name="fname">
+            </div>
 
-          <div><label for="lname">Last name</label>
-            <input type="text" id="lname" name="lname">
-          </div>
+            <div><label for="lname">Last name</label>
+              <input type="text" id="lname" name="lname">
+            </div>
 
-          <div>
-            <label for="workemail">Work Email</label>
-            <input type="text" id="workemail" name="workemail">
-          </div>
+            <div>
+              <label for="workemail">Work Email</label>
+              <input type="text" id="workemail" name="workemail">
+            </div>
 
-          <div>
-            <label for="Tittle">Tittle</label>
-            <input type="text" id="Tittle" name="Tittle">
-          </div>
+            <div>
+              <label for="title">title</label>
+              <input type="text" id="title" name="title">
+            </div>
 
-          <div>
-            <input type="submit" value="send">
-          </div>
+            <div>
+              <input type="submit" value="send">
+            </div>
 
           </form>
 
@@ -64,33 +64,35 @@ defineProps({
   color: white;
   text-align: left;
 }
+
 div.content-block {
   padding: 50px;
 }
 
-div.content-block > h2 {
+div.content-block>h2 {
   padding: 10px 10px 0 10px;
   margin: 2px;
   font-size: 32px;
 }
 
 div.content-block>p {
-  padding: 0 10px 10px 10px ;
+  padding: 0 10px 10px 10px;
   margin: 2px;
   font-size: 20px;
 }
-form > div {
+
+form>div {
   display: inline-block;
   padding: 10px;
 }
 
-form > div > input {
+form>div>input {
   display: block;
   padding: 5px;
   margin-top: 10px;
 }
 
-form > div > input:last-child {
-/* couldn't style button, it needs to be same as input forms and responsive */
+form>div>input:last-child {
+  /* couldn't style button, it needs to be same as input forms and responsive */
 }
 </style>

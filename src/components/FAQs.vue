@@ -6,38 +6,39 @@ defineProps({
 
 
 <template>
-      <div class="inner-container">
-        
-          <div class="content-block">
-            <h2>
-              {{ FAQcont.tittle }}
-            </h2>
-            <!-- <ul v-for=" ques in FAQcont.items_list">
+  <div class="inner-container">
+
+    <div class="content-block">
+      <h2>
+        {{ FAQcont.title }}
+      </h2>
+      <!-- <ul v-for=" ques in FAQcont.items_list">
               <li>
                 <span class = "question">{{ ques.question }}</span>
                 <span class = "category">{{ ques.category }}</span>
                 <span class = "answer">Oh, you're gonna be in a coma, all right. I'm a monster. As you may or may not know, Lindsay and I have hit a bit of a rough patch. Steve Holt! Army had half a day.Well, what do you expect, mother? Well, what do you expect, mother? Did you enjoy your meal, Mom? You drank it fast enough. I'm half machine. I'm a monster It's a hug, Michael. I'm hugging you. Steve Holt! Army had half a day. We just call it a sausage.</span>
               </li>
             </ul> -->
-            <!-- ========================================================== -->
-            <div class="wrap-collabsible" v-for=" (ques, index) in FAQcont.items_list" key="index" >
-              <input :id="'collapsible2' + index" class="toggle" type="checkbox" checked="">
-              <label :for="'collapsible2'+ index" class="lbl-toggle">{{ ques.question }} <span><i class="fa-solid fa-user"></i></span> </label>
-            
-              <div class="collapsible-content">
-                <div class="content-inner">
-                  <p>{{ ques.category }}</p>
-                </div>
-              </div>
-            </div>
-            <!-- ========================================================== -->
+      <!-- ========================================================== -->
+      <div class="wrap-collabsible" v-for=" (ques, index) in FAQcont.items_list" key="index">
+        <input :id="'collapsible2' + index" class="toggle" type="checkbox" checked="">
+        <label :for="'collapsible2' + index" class="lbl-toggle">{{ ques.question }} <span><i
+              class="fa-solid fa-user"></i></span> </label>
+
+        <div class="collapsible-content">
+          <div class="content-inner">
+            <p>{{ ques.category }}</p>
           </div>
-        
+        </div>
       </div>
+      <!-- ========================================================== -->
+    </div>
+
+  </div>
 </template>
 
 <style scoped>
-h2{
+h2 {
   font-size: 48px;
   color: var(--primary);
 }
@@ -65,9 +66,11 @@ li>span:nth-child(2) {
 .content-block {
   width: 100%;
 }
+
 .content-block>h2 {
   text-align: left;
 }
+
 /* ======================================================= */
 
 input[type='checkbox'] {
@@ -76,7 +79,7 @@ input[type='checkbox'] {
 
 .wrap-collabsible {
   margin: .1rem 0;
-  
+
 }
 
 .lbl-toggle {
@@ -135,7 +138,7 @@ input[type='checkbox'] {
 
 .collapsible-content .content-inner {
   background: var(--bg-layer-300);
-  
+
   border-left: 4px solid var(--bg-layer-600);
   border-right: 4px solid var(--bg-layer-600);
   border-bottom: 4px solid var(--bg-layer-600);
@@ -148,7 +151,7 @@ input[type='checkbox'] {
   margin-bottom: 0;
 }
 
-label> span {
+label>span {
   float: right;
 }
 </style>

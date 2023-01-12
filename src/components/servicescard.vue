@@ -9,22 +9,22 @@ defineProps({
   <div class="inner-container">
     <div class="content">
       <div class="content-block">
-        <h2>{{ servicecardCont.tittle }}</h2>
-        <p>{{ servicecardCont.discription }}</p>
+        <h2>{{ servicecardCont.title }}</h2>
+        <p>{{ servicecardCont.description }}</p>
         <div>
-          <div v-for="(cardcont, index) in servicecardCont.boxycontent" :key="index">
+          <div v-for="(cardcont, index) in servicecardCont.gridItems" :key="index">
             <p>{{ cardcont.category }}</p>
             <h3> <i class="fa-solid fa-user"></i> {{ cardcont.sub_header }}</h3>
-            <p>{{ cardcont.sub_discription }}</p>
+            <p>{{ cardcont.description }}</p>
             <hr>
-            <h4>{{ cardcont.subtittle }}</h4>
-            <ul v-for="(items, index) in cardcont.list_items" :key="index">
+            <h4>{{ cardcont.subtitle }}</h4>
+            <ul v-for="(items, index) in cardcont.itemsList" :key="index">
               <li> <i class="fa-solid fa-circle-check"></i> {{ items.item }}</li>
             </ul>
-            <div v-for="(btton, index) in cardcont.sub_moduleHotspot" :key="index">
+            <div v-for="(btton, index) in cardcont.atoms" :key="index">
 
               <a :href="btton.url" v-for="btn, index in btton " :key="index"> {{ btn.text }}</a>
-              
+
             </div>
 
           </div>

@@ -9,7 +9,7 @@ defineProps({
     <div class="content">
       <div class="content-block">-->
   <ul>
-    <li v-for="(tokyo, index) in optionsliceCont.boxycontent" :key="index">
+    <li v-for="(tokyo, index) in optionsliceCont.gridItems" :key="index">
       <span> <i class="fa-solid fa-user"></i> {{ tokyo.item }}</span>
     </li>
   </ul>

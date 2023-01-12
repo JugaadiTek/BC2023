@@ -3,7 +3,7 @@
   <div class="heroBannerContainer">
     <img src="src\assets\AdobeStock_524865233.jpeg" alt="travel" class="image">
     <div class="overlay">
-      <img src="src\assets\8562956_25550 [Converted].svg" alt="" class="overlayImage zoom">
+      <img src="src\assets\8562956_25550 [Converted].svg" alt="" class="overlayImage">
     </div>
   </div>
 </template>

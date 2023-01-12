@@ -1,48 +1,50 @@
 <script setup>
 defineProps({
-  optionsliceArtCont:[]
+  optionsliceArtCont: []
 })
 </script>
 
 <template>
-      <div class="inner-container">
-        <div class="content">
-          <div class="content-block">
-              <div>
-                <h2> <i class="fa-solid fa-user"></i> {{ optionsliceArtCont.details.tittle}}</h2>
-                <p>{{ optionsliceArtCont.details.discription}}</p>
-                <a href="">Demo</a>
-              </div>
-              <div>
-                <ul>
-                  <li v-for="ghoul,index in optionsliceArtCont.details.benlist" :key="index">
-                    {{ghoul.item}}
-                  </li>
-                </ul>
-              </div>
-          </div>
+  <div class="inner-container">
+    <div class="content">
+      <div class="content-block">
+        <div>
+          <h2> <i class="fa-solid fa-user"></i> {{ optionsliceArtCont.details.title }}</h2>
+          <p>{{ optionsliceArtCont.details.description }}</p>
+          <a href="">Demo</a>
+        </div>
+        <div>
+          <ul>
+            <li v-for="ghoul, index in optionsliceArtCont.details.dataList" :key="index">
+              {{ ghoul.item }}
+            </li>
+          </ul>
         </div>
       </div>
+    </div>
+  </div>
 </template>
 
 <style scoped>
-
-h2{
+h2 {
   text-align: left;
 }
+
 ul {
-text-align: center;
-padding: unset;
+  text-align: center;
+  padding: unset;
 }
+
 a {
   display: inline-block;
   border: 4px solid #280071;
   background-color: #280071;
   color: #ffffff;
   border-radius: 4px;
-  margin-top: 10px ;
+  margin-top: 10px;
   padding: 2px 56px;
 }
+
 .content-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -50,7 +52,8 @@ a {
   align-self: center;
   text-align: left;
 }
-.content-block>div:last-child{
+
+.content-block>div:last-child {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 6px;
@@ -59,7 +62,7 @@ a {
 }
 
 @media (max-width: 600px) {
-  .content-block{
+  .content-block {
     grid-template-columns: repeat(1, 1fr);
   }
 }

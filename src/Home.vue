@@ -11,12 +11,12 @@ import optionsliceArt from "./components/optionsliceArt.vue";
 import Postfeed from "./components/postfeed.vue";
 import split_ImgTxt from "./components/split_ImgTxt.vue";
 import footerSlice from "./components/footerSlice.vue";
-import rawhtml from "./components/rawhtml.vue";
+// import rawhtml from "./components/rawhtml.vue";
 import btnType1 from "./components/btnType1.vue";
 import btnType2 from "./components/btnType2.vue";
 import btnType3 from "./components/btnType3.vue";
 import btnType4 from "./components/btnType4.vue";
-import parallaxHero from "./components/parallaxHero.vue";
+// import parallaxHero from "./components/parallaxHero.vue";
 
 import { ref } from 'vue';
 
@@ -32,7 +32,7 @@ const navigations = ref([
       logoFill: "",
     },
     alt: ["nogap", "darkbg"],
-    sliceContent: [
+    bricks: [
       { label: "Solution", url: '' },
       { label: "Resources", url: '' },
       { label: "About Us", url: '' }
@@ -218,46 +218,37 @@ const slices = ref([
         { id: 0, note: "" }
       ]
     },
-    alt: ["nogap-top", "darkbg"],
-    sliceContent: {
-      brandLogo: [{ url: "url/url", altText: "text" }],
+    alt: ["nogap-top", ""],
+    bricks: {
+      atoms: [
+        { url: "url", altText: "text", type: "type1" },
+        { url: "url", altText: "text", type: "type2" }
+      ],
       title: "Made For The Market",
-      discription: "BuyChain is the end-to-end supply chain management software built for the LBM industry. We unify and mobilizes your sales, inventory, and banking so that you can meet the demands of an increasingly volatile market.",
-      imageurl: "https://placekitten.com/640/360",
-      herobg: "/src/assets/BG Blank.jpg",
-      herobgAltText: "",
-      sub_moduleHotspot: [
+      description: "BuyChain is the end-to-end supply chain management software built for the LBM industry. We unify and mobilizes your sales, inventory, and banking so that you can meet the demands of an increasingly volatile market.",
+      imageList: [
+        { imageurl: "https://placekitten.com/640/360", alt: "altText", type: "type1" }
+      ],
+      bgImage: "src/assets/AdobeStock_504230989.jpeg",
+      bgImageOverlay: "src/assets/8562956_25550 [Converted].svg",
+      bgImageAltText: "",
+      atoms: [
         {
           type: "buttons",
           alt: [""],
-          buttonlist: [{
-            url: "notporn.com",
-            text: "sometext",
-            type: ["alt1", "class3", "animationX"]
-          },
-          {
-            url: "notporn.com",
-            text: "sometext",
-            type: ["alt1", "class3", "animationX"]
-          }]
-        },
-        {
-          type: "iconbutton",
-          alt: [""],
-          buttonlist: [{
-            url: "notporn.com",
-            iconurl: "/url",
-            text: "sometext",
-            altText: "text",
-            type: ["alt1", "class3", "animationX"]
-          },
-          {
-            url: "notporn.com",
-            text: "sometext",
-            type: ["alt1", "class3", "animationX"]
-          }]
+          buttonlist: [
+            {
+              url: "https://www.w3schools.com/graphics/svg_intro.asp",
+              text: "Solutions",
+              type: ["alt1", "class1", "animationX"]
+            },
+            {
+              url: "https://www.w3schools.com/graphics/svg_intro.asp",
+              text: "Schedule Demo",
+              type: ["alt2", "class2", "animationY"]
+            }
+          ]
         }
-
       ]
     }
   },
@@ -273,7 +264,7 @@ const slices = ref([
         { id: 0, note: "" }
       ]
     },
-    sliceContent: [
+    bricks: [
       {
         icon: "fontawesomeIcon",
         rating: 5,
@@ -312,13 +303,13 @@ const slices = ref([
       ]
     },
     alt: ["nogap-top", ""],
-    sliceContent: {
+    bricks: {
       brandLogo: [{ url: "url/url", altText: "text" }],
       title: "Made For The Market",
       contentBlocks: [
         {
-          discription: "description example",
-          sub_moduleHotspot: [
+          description: "description example",
+          atoms: [
             {
               type: "buttons", alt: [""], buttonlist:
                 [
@@ -358,21 +349,6 @@ const slices = ref([
   },
 
   {
-    component: "hero",
-    // component:"halves",
-    alt: ["lightbg"],
-    sliceContent: {
-      title: "LBM Operations Software",
-      discription: "BuyChain’s end-to-end platform connects and informs every aspect of your business. The system integrates every facet of your operations, facilitating communication between departments and providing a holistic view of the entire enterprise. With real-time inventory management and shipping, AI driven sales order, and financial transparency, you can buy and sell faster, reduce risk and never miss a deal or market move again. ",
-      imageurl: "https://placekitten.com/640/360",
-      iconurl: [
-        { icnurl: "src/assets/btn-xlrg-alt1.svg", altText: "text" },
-        { icnurl: "src/assets/btn-xlrg-alt2.svg", altText: "text" },
-        { icnurl: "src/assets/btn-xlrg-alt.svg", altText: "text" }
-      ]
-    }
-  },
-  {
     component: "optionslice",
     devnotes: {
       module: [15, "38a", 41],
@@ -382,8 +358,8 @@ const slices = ref([
       ]
     },
     alt: ["darkbg", "nogap"],
-    sliceContent: {
-      boxycontent: [
+    bricks: {
+      gridItems: [
         { item: "Inventory Management", icon: "fontawesomeIcon" },
         { item: "Risk Management", icon: "fontawesomeIcon" },
         { item: "Order Management", icon: "fontawesomeIcon" },
@@ -408,13 +384,13 @@ const slices = ref([
       ]
     },
     alt: ["lightbg"],
-    sliceContent: {
+    bricks: {
       details: {
-        tittle: "Inventory Management",
+        title: "Inventory Management",
         icon: "fontawesomeIcon",
-        discription: "Our system eliminates time now spent on internal cross-checking by providing all stakeholders real-time inventory data, informing both purchasing and sales on what to buy and what is available to sell. ",
-        //benlist: [[{ icon: "fontawesomeIcon", item: "Benifit" }], [{ icon: "fontawesomeIcon", item: "Benifit" }]] 
-        benlist: [
+        description: "Our system eliminates time now spent on internal cross-checking by providing all stakeholders real-time inventory data, informing both purchasing and sales on what to buy and what is available to sell. ",
+        //dataList: [[{ icon: "fontawesomeIcon", item: "Benifit" }], [{ icon: "fontawesomeIcon", item: "Benifit" }]] 
+        dataList: [
           { icon: "fontawesomeIcon", item: "Benifit" },
           { icon: "fontawesomeIcon", item: "Benifit" },
           { icon: "fontawesomeIcon", item: "Benifit" },
@@ -440,15 +416,15 @@ const slices = ref([
       ]
     },
     alt: ["lightbg"],
-    sliceContent:
+    bricks:
     {
-      tittle: "Manage Voaltility and Reduce Risk",
-      discription: "The BuyChain system eliminates longtime, industry-wide constraints on profitability and growth with the tools, control, and data you need to gain a competitive edge. We have married technology with customer service in a way that has not previously existed in our industry.",
-      boxycontent: [
+      title: "Manage Voaltility and Reduce Risk",
+      description: "The BuyChain system eliminates longtime, industry-wide constraints on profitability and growth with the tools, control, and data you need to gain a competitive edge. We have married technology with customer service in a way that has not previously existed in our industry.",
+      gridItems: [
         {
           imgurl: "https://placekitten.com/640/360",
           altText: "",
-          tittle: "Buy",
+          title: "Buy",
           details: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
           buttonlist: [
             { url: "/url", text: "text" }
@@ -457,7 +433,7 @@ const slices = ref([
         {
           imgurl: "https://placekitten.com/640/360",
           altText: "",
-          tittle: "Manage",
+          title: "Manage",
           details: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
           buttonlist: [
             { url: "/url", text: "text" }
@@ -466,7 +442,7 @@ const slices = ref([
         {
           imgurl: "https://placekitten.com/640/360",
           altText: "",
-          tittle: "Sell",
+          title: "Sell",
           details: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
           buttonlist: [
             { url: "/url", text: "text" }
@@ -486,26 +462,26 @@ const slices = ref([
       ]
     },
     alt: ["lightbg"],
-    sliceContent:
+    posts:
     {
-      tittle: "Recent Post",
-      boxycontent: [
+      title: "Recent Post",
+      gridItems: [
         {
           date: "01/01/1999",
-          articletittle: " article tittle here",
-          detail: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
+          title: " article title here",
+          excerpt: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
           readmore_url: "https://www.w3schools.com/css/css_pseudo_elements.asp"
         },
         {
           date: "01/01/1999",
-          articletittle: " article tittle here",
-          detail: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
+          title: " article title here",
+          excerpt: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
           readmore_url: "https://www.w3schools.com/css/css_pseudo_elements.asp"
         },
         {
           date: "01/01/1999",
-          articletittle: " article tittle here",
-          detail: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
+          title: " article title here",
+          excerpt: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
           readmore_url: "https://www.w3schools.com/css/css_pseudo_elements.asp"
         }
       ]
@@ -521,8 +497,8 @@ const slices = ref([
       ]
     },
     alt: ["lightbg"],
-    sliceContent: {
-      tittle: "FAQs",
+    bricks: {
+      title: "FAQs",
       items_list: [
         { question: "how to sjsdjfosijfooj kjdfglk fdgjl ?", icon: "fontawesomeIcon", content: "randomtext" },
         { question: "how to sjsdjfosijfooj kjdfglk fdgjl ?", icon: "fontawesomeIcon", content: "randomtext" }
@@ -540,9 +516,9 @@ const slices = ref([
       ]
     },
     alt: ["lightbg"],
-    sliceContent: {
-      tittle: "Replace your hammer with a nail gun.",
-      sub_moduleHotspot: {
+    bricks: {
+      title: "Replace your hammer with a nail gun.",
+      atoms: {
         type: "buttons",
         alt: [""],
         buttonlist: [{
@@ -556,20 +532,20 @@ const slices = ref([
           type: ["alt1", "class3", "animationX"]
         }]
       },
-      boxycontent: [
+      gridItems: [
         {
           sub_header: " operations ",
           icon: "fontawesomeIcon",
-          sub_discription: "BuyChain’s end-to-end platform connects and informs every aspect of your business. The system digitizes your operations, facilitates communication between departments and provides a holistic view of the entire enterprise. ",
+          description: "BuyChain’s end-to-end platform connects and informs every aspect of your business. The system digitizes your operations, facilitates communication between departments and provides a holistic view of the entire enterprise. ",
           category: " ",
-          subtittle: "popular features",
-          list_items: [
+          title: "popular features",
+          itemsList: [
             { icon: "fontawesomeIcon", item: "Feature" },
             { icon: "fontawesomeIcon", item: "Feature" },
             { icon: "fontawesomeIcon", item: "Feature" },
             { icon: "fontawesomeIcon", item: "Feature" }
           ],
-          sub_moduleHotspot: {
+          atoms: {
             type: "buttons",
             buttonlist: [
               {
@@ -588,10 +564,10 @@ const slices = ref([
         {
           sub_header: "capital",
           icon: "fontawesomeIcon",
-          sub_discription: "BuyChain’s end-to-end platform connects and informs every aspect of your business. The system digitizes your operations, facilitates communication between departments and provides a holistic view of the entire enterprise. ",
+          description: "BuyChain’s end-to-end platform connects and informs every aspect of your business. The system digitizes your operations, facilitates communication between departments and provides a holistic view of the entire enterprise. ",
           category: "BETA",
-          subtittle: "popular features",
-          list_items: [
+          title: "popular features",
+          itemsList: [
             { icon: "fontawesomeIcon", item: "Feature" },
             { icon: "fontawesomeIcon", item: "Feature" },
             { icon: "fontawesomeIcon", item: "Feature" },
@@ -605,10 +581,10 @@ const slices = ref([
         {
           sub_header: "dashboard",
           icon: "fontawesomeIcon",
-          sub_discription: "BuyChain’s end-to-end platform connects and informs every aspect of your business. The system digitizes your operations, facilitates communication between departments and provides a holistic view of the entire enterprise. ",
+          description: "BuyChain’s end-to-end platform connects and informs every aspect of your business. The system digitizes your operations, facilitates communication between departments and provides a holistic view of the entire enterprise. ",
           category: "FREE",
-          subtittle: "popular features",
-          list_items: [
+          title: "popular features",
+          itemsList: [
             { icon: "fontawesomeIcon", item: "Feature" },
             { icon: "fontawesomeIcon", item: "Feature" },
             { icon: "fontawesomeIcon", item: "Feature" },
@@ -647,12 +623,12 @@ const slices = ref([
 
     <!---------------------- NAVIGATION BAR ---------------------->
     <nav class="mainNav nogap darkbg" v-for="navigationbar in navigations">
-      <NavBar :navbtn="navigationbar.sliceContent" />
-      <btnType1/>
-      <btnType2/>
-      <btnType3/>
-      <btnType4/>
-      <parallaxHero/>
+      <NavBar :navbtn="navigationbar.bricks" />
+      <btnType1 />
+      <btnType2 />
+      <btnType3 />
+      <btnType4 />
+      <!-- <parallaxHero/> -->
     </nav>
 
 
@@ -664,39 +640,39 @@ const slices = ref([
       :key="index">
 
       <div v-if="slice.component == 'hero'">
-        <hero :herocont="slice.sliceContent" />
+        <hero :herocont="slice.bricks" />
       </div>
 
       <div v-else-if="slice.component == 'split_ImgTxt'">
-        <split_ImgTxt :herocont="slice.sliceContent" />
+        <split_ImgTxt :herocont="slice.bricks" />
       </div>
 
-      <div v-else-if="slice.component == 'rawhtml'">
+      <!-- <div v-else-if="slice.component == 'rawhtml'">
         <rawhtml />
-      </div>
+      </div> -->
 
       <div :class="container" v-else-if="slice.component == 'optionsliceArt'">
-        <optionsliceArt :optionsliceArtCont="slice.sliceContent" />
+        <optionsliceArt :optionsliceArtCont="slice.bricks" />
       </div>
 
       <div class="container" v-else-if="slice.component == 'optionslice'">
-        <optionslice :optionsliceCont="slice.sliceContent" />
+        <optionslice :optionsliceCont="slice.bricks" />
       </div>
 
       <div :class="container" v-else-if="slice.component == 'artcont'">
-        <artcont :artcontent="slice.sliceContent" />
+        <artcont :artcontent="slice.bricks" />
       </div>
 
       <div :class="container" v-else-if="slice.component == 'postfeed'">
-        <postfeed :postfeedCont="slice.sliceContent" />
+        <postfeed :postsCont="slice.posts" />
       </div>
 
       <div :class="container" v-else-if="slice.component == 'FAQs'">
-        <FAQs :FAQcont="slice.sliceContent" />
+        <FAQs :FAQcont="slice.bricks" />
       </div>
 
       <div :class="container" v-else-if="slice.component == 'servicecard'">
-        <servicescard :servicecardCont="slice.sliceContent" />
+        <servicescard :servicecardCont="slice.bricks" />
       </div>
 
       <div :class="container" v-else-if="slice.component == 'newsletter'">

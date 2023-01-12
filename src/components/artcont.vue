@@ -6,29 +6,28 @@ defineProps({
 
 
 <template>
-      <div class="inner-container">
-        <div class="content">
-          <div class="content-block">
-            <h2>{{ artcontent.tittle }}</h2>
-            <p> {{ artcontent.discription }} </p>
+  <div class="inner-container">
+    <div class="content">
+      <div class="content-block">
+        <h2>{{ artcontent.title }}</h2>
+        <p> {{ artcontent.description }} </p>
 
-            <div v-for="guddu in artcontent.boxycontent">
+        <div v-for="guddu in artcontent.gridItems">
 
-              <img :src="guddu.imgurl" alt="" height="220" width="370">
+          <img :src="guddu.imgurl" alt="" height="220" width="370">
 
 
-              <div>
-                <h3>{{ guddu.tittle }}</h3>
-                <p> {{ guddu.details }}</p>
-              </div>
-            </div>
+          <div>
+            <h3>{{ guddu.title }}</h3>
+            <p> {{ guddu.details }}</p>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 </template>
 
 <style scoped>
-
 .content-block>div {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -37,7 +36,7 @@ defineProps({
   text-align: left;
   align-self: center;
   /* overflow: hidden; */
-  padding: 10px ;
+  padding: 10px;
 }
 
 img {

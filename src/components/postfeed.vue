@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-  postfeedCont: []
+  postsCont: []
 })
 </script>
 
@@ -9,23 +9,22 @@ defineProps({
   <div class="inner-container">
     <div class="content">
       <div class="content-block">
-        <h2>{{ postfeedCont.tittle }}</h2>
+        <h2>{{ postsCont.title }}</h2>
         <div>
-          <div v-for="cardcont in postfeedCont.boxycontent">
+          <div v-for="cardcont in postsCont.gridItems">
             <p>{{ cardcont.date }}</p>
-            <h3>{{ cardcont.articletittle }}</h3>
-            <p>{{ cardcont.detail }}</p>
-            <a :href="postfeedCont.readmore_url">Read more ></a>
+            <h3>{{ cardcont.title }}</h3>
+            <p>{{ cardcont.excerpt }}</p>
+            <a :href="postsCont.readmore_url">Read more ></a>
           </div>
         </div>
-        <a :href="postfeedCont">Go To Newsroom</a>
+        <a :href="postsCont">Go To Newsroom</a>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-
 h2 {
   color: #280071;
   font-size: 48px;
@@ -46,9 +45,11 @@ h3+p {
 p {
   margin: auto;
 }
+
 div.content-block {
   text-align: center;
 }
+
 .content-block>div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -86,6 +87,4 @@ div.content-block {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-
-
 </style>

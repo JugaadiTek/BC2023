@@ -6,22 +6,27 @@ defineProps({
 
 
 <template>
-  <img :src="herocont.herobg">
+
+  <div class="heroBannerContainer">
+    <img :src="herocont.bgImage" :alt="wee" class="image">
+    <div class="overlay">
+      <img :src="herocont.bgImageOverlay" :alt="wee" class="overlayImage">
+    </div>
+  </div>
+
   <div class="inner-container">
     <div class="content">
       <div class="content-block">
         <div>
+          <!-- <img v-for="logo in herocont.brandLogoList" :src="logo.url" :alt="logo.alt"> -->
           <h2>{{ herocont.title }}</h2>
-          <p>{{ herocont.discription }}</p>
-          <div class="svg-btn-grid">
-            <img v-for=" heroimg, index in herocont.iconurl" :key="index" :src="heroimg.icnurl" alt="">
-          </div>
+          <p>{{ herocont.description }}</p>
+          <!-- <span >
+            <a v-for="button in herocont.atoms.buttonlist[0]" :href="button.url">{{ button.text }}</a>
+          </span> -->
         </div>
-        <img :src="herocont.imageurl" alt="">
-        <div v-for=" bob, index in herocont.sub_modulesHotspot " :key="index">
-          <a href=""> {{ bob }}</a>
-          <pre>{{ bob }}</pre>
-        </div>
+        <img v-for="image in herocont.imageList" :src="image.imageurl" alt="">
+
       </div>
     </div>
   </div>
@@ -33,8 +38,6 @@ defineProps({
   grid-template-columns: 1fr 1fr;
   gap: 100px;
 }
-
-
 
 @media (max-width: 600px) {
   .content-block {
@@ -51,12 +54,58 @@ section.hero {
   position: relative;
 }
 
-section.hero>div>img {
+/* section.hero>div>div>img, section.hero>div>div>div>img {
   position: absolute;
   width: 100%;
   z-index: -1;
   top: 100%;
   left: 100%;
   transform: translate(-100%, -100%);
+} */
+
+/* parallax effect heor banner */
+.heroBannerContainer {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 50%;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  top: 100%;
+  left: 100%;
+  transform: translate(-100%, -100%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .7s ease;
+}
+
+.heroBannerContainer:hover .overlay {
+  opacity: 1;
+}
+
+.overlayImage {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 </style>

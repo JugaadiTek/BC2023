@@ -75,7 +75,7 @@ import { ref } from 'vue';
 const slices = ref([
   {
     bob: "postfeed",
-    sliceContent: {
+    bricks: {
       title: "Nice to Meet You",
       boxcontent: [
         {
@@ -114,37 +114,37 @@ const slices = ref([
 
   {
     bob: "ourprocess",
-    sliceContent: {
+    bricks: {
       title: "Our Process",
       subslice: {
         boxcontent: {
           header: "Phase 1",
           sprintlist: [
-            { imageurl: "src/assets/Group 1470.svg", name: "Sprint 1", about: "Established Fact Based", discription: "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI."},
-            { imageurl: "src/assets/Group 1471.svg", name: "Sprint 2", about: "Strategy Wireframe", discription: "Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service." },
-            { imageurl: "src/assets/Group 1472.svg", name: "Sprint 3", about: "Alignment & Validation", discription: "Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables." }
+            { imageurl: "src/assets/Group 1470.svg", name: "Sprint 1", about: "Established Fact Based", description: "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI." },
+            { imageurl: "src/assets/Group 1471.svg", name: "Sprint 2", about: "Strategy Wireframe", description: "Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service." },
+            { imageurl: "src/assets/Group 1472.svg", name: "Sprint 3", about: "Alignment & Validation", description: "Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables." }
           ]
         },
         boxcontent2: {
           header: "Phase 2",
           sprintlist: [
-            { imageurl: "src/assets/Puzzle2.svg", header: "Sprint 4", about: "Implimentation & Enablement Sprints", discription: "Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables." }
+            { imageurl: "src/assets/Puzzle2.svg", header: "Sprint 4", about: "Implimentation & Enablement Sprints", description: "Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables." }
           ]
         }
-      }, 
+      },
     }
   },
 
   {
     bob: "hero2",
-    sliceContent: {
+    bricks: {
       title: "LBM Operations Software",
-      discription: "BuyChain’s end-to-end platform connects and informs every aspect of your business. The system integrates every facet of your operations, facilitating communication between departments and providing a holistic view of the entire enterprise. With real-time inventory management and shipping, AI driven sales order, and financial transparency, you can buy and sell faster, reduce risk and never miss a deal or market move again. ",
+      description: "BuyChain’s end-to-end platform connects and informs every aspect of your business. The system integrates every facet of your operations, facilitating communication between departments and providing a holistic view of the entire enterprise. With real-time inventory management and shipping, AI driven sales order, and financial transparency, you can buy and sell faster, reduce risk and never miss a deal or market move again. ",
       imageurl: "https://placekitten.com/640/360",
       iconurl: [
-        { icnurl:"src/assets/btn-xlrg-alt1.svg"},
-        { icnurl:"src/assets/btn-xlrg-alt2.svg"},
-        { icnurl:"src/assets/btn-xlrg-alt.svg"}
+        { icnurl: "src/assets/btn-xlrg-alt1.svg" },
+        { icnurl: "src/assets/btn-xlrg-alt2.svg" },
+        { icnurl: "src/assets/btn-xlrg-alt.svg" }
       ]
     }
   },
@@ -152,8 +152,8 @@ const slices = ref([
 
   {
     bob: "gojo",
-    sliceContent: {
-      boxycontent: [
+    bricks: {
+      gridItems: [
         { item: "Inventory Management" },
         { item: "Risk Management" },
         { item: "Order Management" },
@@ -166,20 +166,20 @@ const slices = ref([
         { item: "Finance & Accounting" },
       ],
       details: {
-        tittle: "Inventory Management",
-        discription: "Our system eliminates time now spent on internal cross-checking by providing all stakeholders real-time inventory data, informing both purchasing and sales on what to buy and what is available to sell. ",
-        benlist: [
-          {item:"Benifit"},
-          {item:"Benifit"},
-          {item:"Benifit"},
-          {item:"Benifit"},
-          {item:"Benifit"},
-          {item:"Benifit"},
-          {item:"Benifit"},
-          {item:"Benifit"},
-          {item:"Benifit"},
-          {item:"Benifit"},
-          
+        title: "Inventory Management",
+        description: "Our system eliminates time now spent on internal cross-checking by providing all stakeholders real-time inventory data, informing both purchasing and sales on what to buy and what is available to sell. ",
+        dataList: [
+          { item: "Benifit" },
+          { item: "Benifit" },
+          { item: "Benifit" },
+          { item: "Benifit" },
+          { item: "Benifit" },
+          { item: "Benifit" },
+          { item: "Benifit" },
+          { item: "Benifit" },
+          { item: "Benifit" },
+          { item: "Benifit" },
+
         ]
       }
     }
@@ -187,24 +187,24 @@ const slices = ref([
 
   {
     bob: "john",
-    sliceContent:
+    bricks:
     {
-      tittle: "Manage Voaltility and Reduce Risk",
-      discription: "The BuyChain system eliminates longtime, industry-wide constraints on profitability and growth with the tools, control, and data you need to gain a competitive edge. We have married technology with customer service in a way that has not previously existed in our industry.",
-      boxycontent: [
+      title: "Manage Voaltility and Reduce Risk",
+      description: "The BuyChain system eliminates longtime, industry-wide constraints on profitability and growth with the tools, control, and data you need to gain a competitive edge. We have married technology with customer service in a way that has not previously existed in our industry.",
+      gridItems: [
         {
           imgurl: "https://placekitten.com/640/360",
-          tittle: "Buy",
+          title: "Buy",
           details: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
         },
         {
           imgurl: "https://placekitten.com/640/360",
-          tittle: "Manage",
+          title: "Manage",
           details: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
         },
         {
           imgurl: "https://placekitten.com/640/360",
-          tittle: "Sell",
+          title: "Sell",
           details: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
         }
       ]
@@ -213,24 +213,24 @@ const slices = ref([
   },
   {
     bob: "tommy",
-    sliceContent:
+    bricks:
     {
-      tittle: "Recent Post",
-      boxycontent: [
+      title: "Recent Post",
+      gridItems: [
         {
           date: "01/01/1999",
-          articletittle: " article tittle here",
+          articletitle: " article title here",
           detail: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
           readmore_url: "https://www.w3schools.com/css/css_pseudo_elements.asp"
         },
         {
           date: "01/01/1999",
-          articletittle: " article tittle here",
+          articletitle: " article title here",
           detail: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
           readmore_url: "https://www.w3schools.com/css/css_pseudo_elements.asp"
         }, {
           date: "01/01/1999",
-          articletittle: " article tittle here",
+          articletitle: " article title here",
           detail: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
           readmore_url: "https://www.w3schools.com/css/css_pseudo_elements.asp"
         }
@@ -239,8 +239,8 @@ const slices = ref([
   },
   {
     bob: "patrik",
-    sliceContent: {
-      tittle: " FAQs",
+    bricks: {
+      title: " FAQs",
       items_list: [
         { question: " how to sjsdjfosijfooj kjdfglk fdgjl ? ", category: " warehouse" },
         { question: " how to sjsdjfosijfooj kjdfglk fdgjl ? ", category: " warehouse" },
@@ -255,16 +255,16 @@ const slices = ref([
 
   {
     bob: "loki",
-    sliceContent: {
-      tittle: "Manage Voaltility and Reduce Risk",
-      discription: "The BuyChain system eliminates longtime, industry-wide constraints on profitability and growth with the tools, control, and data you need to gain a competitive edge. We have married technology with customer service in a way that has not previously existed in our industry.",
-      boxycontent: [
+    bricks: {
+      title: "Manage Voaltility and Reduce Risk",
+      description: "The BuyChain system eliminates longtime, industry-wide constraints on profitability and growth with the tools, control, and data you need to gain a competitive edge. We have married technology with customer service in a way that has not previously existed in our industry.",
+      gridItems: [
         {
           sub_header: " operations ",
-          sub_discription: "BuyChain’s end-to-end platform connects and informs every aspect of your business. The system digitizes your operations, facilitates communication between departments and provides a holistic view of the entire enterprise. ",
+          description: "BuyChain’s end-to-end platform connects and informs every aspect of your business. The system digitizes your operations, facilitates communication between departments and provides a holistic view of the entire enterprise. ",
           category: " ",
-          subtittle: "popular features",
-          list_items: [
+          subtitle: "popular features",
+          itemsList: [
             { item: "sdfslkdjhf" },
             { item: "sdfslkdjhf" },
             { item: "sdfslkdjhf" },
@@ -277,10 +277,10 @@ const slices = ref([
         },
         {
           sub_header: " capital ",
-          sub_discription: "BuyChain’s end-to-end platform connects and informs every aspect of your business. The system digitizes your operations, facilitates communication between departments and provides a holistic view of the entire enterprise. ",
+          description: "BuyChain’s end-to-end platform connects and informs every aspect of your business. The system digitizes your operations, facilitates communication between departments and provides a holistic view of the entire enterprise. ",
           category: " BETA ",
-          subtittle: "popular features",
-          list_items: [
+          subtitle: "popular features",
+          itemsList: [
             { item: "sdfslkdjhf" },
             { item: "sdfslkdjhf" },
             { item: "sdfslkdjhf" },
@@ -293,10 +293,10 @@ const slices = ref([
         },
         {
           sub_header: " dashboard ",
-          sub_discription: "BuyChain’s end-to-end platform connects and informs every aspect of your business. The system digitizes your operations, facilitates communication between departments and provides a holistic view of the entire enterprise. ",
+          description: "BuyChain’s end-to-end platform connects and informs every aspect of your business. The system digitizes your operations, facilitates communication between departments and provides a holistic view of the entire enterprise. ",
           category: " FREE ",
-          subtittle: "popular features",
-          list_items: [
+          subtitle: "popular features",
+          itemsList: [
             { item: "sdfslkdjhf" },
             { item: "sdfslkdjhf" },
             { item: "sdfslkdjhf" },
@@ -311,7 +311,7 @@ const slices = ref([
   },
   {
     bob: "NavBar",
-    sliceContent: [
+    bricks: [
       { label: "Who We Are", url: '' },
       { label: "What We Do", url: '' },
       { label: "News + Insights", url: '' },
@@ -321,7 +321,7 @@ const slices = ref([
   },
   {
     bob: "hero",
-    sliceContent: [
+    bricks: [
       {
         heroImageUrl: '/src/assets/Puzzle.svg',
         label: "Is your GTM Strategy not working?",
@@ -332,7 +332,7 @@ const slices = ref([
   },
   {
     bob: "puzzleBreakdown",
-    sliceContent: {
+    bricks: {
       puzzlePieces: [
         { label: 'GTM Strategy is not well defined', pieceImageUrl: '/src/assets/Path 822.svg' },
         { label: "New process didn't deliver results", pieceImageUrl: '/src/assets/Path 818.svg' },
@@ -345,7 +345,7 @@ const slices = ref([
   },
   {
     bob: "hero",
-    sliceContent: [
+    bricks: [
       {
         heroImageUrl: '/src/assets/Puzzle2.svg',
         label: "We can help you put the pieces in place.",
@@ -356,7 +356,7 @@ const slices = ref([
   },
   {
     bob: "getintouch",
-    sliceContent: [
+    bricks: [
       { firstName: " " },
       { lastName: " " },
       { workEmail: " " }
@@ -364,8 +364,8 @@ const slices = ref([
   },
   {
     bob: "puzzleBreakdown",
-    sliceContent: {
-      tittle: " What We Do",
+    bricks: {
+      title: " What We Do",
       backgroundcolor: "white",
       color: "black",
       puzzlePieces: [
@@ -380,7 +380,7 @@ const slices = ref([
   },
   {
     bob: "newsinsights",
-    sliceContent: [
+    bricks: [
       { articleImageUrl: "/src/assets/Puzzle2.svg", label: "News article goes here", date: " 01/01/2023", category: " News + Insights" },
       { articleImageUrl: "/src/assets/Puzzle2.svg", label: "News article goes here", date: " 01/01/2023", category: " News + Insights" },
       { articleImageUrl: "/src/assets/Puzzle2.svg", label: "News article goes here", date: " 01/01/2023", category: " News + Insights" }
@@ -397,57 +397,57 @@ const slices = ref([
       <div v-for="(slice, index) in slices" :key="index">
 
         <!-- <div v-if="slice.bob == 'hero2'">
-          <hero2 :gaara="slice.sliceContent" />
+          <hero2 :gaara="slice.bricks" />
         </div>
 
         <div v-if="slice.bob == 'gojo'">
-          <category :bjon="slice.sliceContent" />
+          <category :bjon="slice.bricks" />
         </div>
 
         <div v-if="slice.bob == 'john'">
-          <artcont :floki="slice.sliceContent" />
+          <artcont :floki="slice.bricks" />
         </div>
 
         <div v-if="slice.bob == 'tommy'">
-          <bob2 :ragnar="slice.sliceContent" />
+          <bob2 :ragnar="slice.bricks" />
         </div>
 
         <div v-if="slice.bob == 'patrik'">
-          <FAQs :thor="slice.sliceContent" />
+          <FAQs :thor="slice.bricks" />
         </div>
 
         <div v-if="slice.bob == 'loki'">
-          <gBob :hulk="slice.sliceContent" />
+          <gBob :hulk="slice.bricks" />
         </div> -->
 
         <!------------------------------------------------------------------- -->
 
         <div v-if="slice.bob == 'postfeed'">
-          <postfeed :feeds="slice.sliceContent" />
+          <postfeed :feeds="slice.bricks" />
         </div>
 
         <div v-if="slice.bob == 'ourprocess'">
-          <ourprocess :process="slice.sliceContent" />
+          <ourprocess :process="slice.bricks" />
         </div>
 
         <div v-if="slice.bob == 'NavBar'">
-          <NavBar :navbtn="slice.sliceContent" />
+          <NavBar :navbtn="slice.bricks" />
         </div>
         <div v-else-if="slice.bob == 'hero'">
-          <hero :herocontent="slice.sliceContent" />
+          <hero :herocontent="slice.bricks" />
         </div>
         <div v-else-if="slice.bob == 'puzzleBreakdown'">
-          <puzzleBreakdown :puzzledata="slice.sliceContent.puzzlePieces" :header="slice.sliceContent.tittle"
-            :backgroundcolora="slice.sliceContent.backgroundcolor" />
+          <puzzleBreakdown :puzzledata="slice.bricks.puzzlePieces" :header="slice.bricks.title"
+            :backgroundcolora="slice.bricks.backgroundcolor" />
         </div>
         <div v-else-if="slice.bob == 'getintouch'">
-          <getintouch :formcontent="slice.sliceContent" />
+          <getintouch :formcontent="slice.bricks" />
         </div>
         <div v-else-if="slice.bob == 'painmap'">
           <painmap />
         </div>
         <div v-else-if="slice.bob == 'newsinsights'">
-          <newsinsights :articles="slice.sliceContent" />
+          <newsinsights :articles="slice.bricks" />
         </div>
         <div v-else-if="slice.bob == 'newsletter'">
           <newsletter />
@@ -464,5 +464,4 @@ const slices = ref([
 
 <style>
 @import './assets/main.css'
-
 </style>

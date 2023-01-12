@@ -69,48 +69,44 @@ a{
     0
   ]
 }
-
-// herocont.contentBlocks.0.sub_moduleHotspot.1.buttonlist.0.iconurl
-
-[{
-  "hero banners":"need to be different if section =section_0 or anything else",
-  "powertools herobanner":"3/4ths section",
-  "ctaHero":"actually quptes fml",
-  "a":"image section animats",
-  "b": "contact us pages need to be done",
-  "category post listing pages":"post listing section not done. 39".,
-  "datadashboards is still a thing":"dont fucking forget that.",
-  "broken vue slices":[
-    "splitImgText",
-    "optionSlice vue needs <a hef=""></a> added to it fml "
-  ],
-  "css missing": [
-    "optionsSliceArticle"
-    "responsiveCSS",
-    "",
-    "",
-  ],
-  "slice missing":[
-    "footer-vue is not done."
-    "wysiwyg",
-    "dev_wysiwyg",
-    "",
-    "",
-    "",
-  ], 
-  "piece Missing":[
-    "corner image not in vue, for post feed and service cards",
-    "nav Dropdown Menus vue",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-  ],
-  "json data structure":[
-    "in chrome one object outputs 2 objects"
-    "it works well in firefox until you refresh"
-  ]
-  
-}]
+// herocont.contentBlocks.0.atoms.1.buttonlist.0.iconurl
+[
+  {
+    "hero banners": "need to be different if section =section_0 or anything else",
+    "powertools herobanner": "3/4ths section",
+    "ctaHero": "actually quptes fml",
+    "a": "image section animats",
+    "b": "contact us pages need to be done",
+    "category post listing pages": "post listing section not done. 39".,
+    "datadashboards is still a thing": "dont fucking forget that.",
+    "broken vue slices": [
+      "splitImgText",
+      "optionSlice vue needs <a hef=""></a> added to it fml "
+    ],
+    "css missing": [
+      "optionsSliceArticle""responsiveCSS",
+      "",
+      "",
+    ],
+    "slice missing": [
+      "footer-vue is not done.""wysiwyg",
+      "dev_wysiwyg",
+      "",
+      "",
+      "",
+    ],
+    "piece Missing": [
+      "corner image not in vue, for post feed and service cards",
+      "nav Dropdown Menus vue",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+    ],
+    "json data structure": [
+      "in chrome one object outputs 2 objects""it works well in firefox until you refresh"
+    ]
+  }
+]

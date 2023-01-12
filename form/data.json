@@ -3,12 +3,12 @@
     alt: [
       "nogap-top"
     ],
-    sliceContent: {
+    bricks: {
       title: " title of component",
-      discription: "market.",
+      description: "market.",
       imageurl: "https://placekitten.com/640/360",
-      herobg: "/src/assets/BG Blank.jpg",
-      sub_moduleHotspot: {
+      bgImage: "/src/assets/BG Blank.jpg",
+      atoms: {
         type: "buttons",
         alt: [
           ""
@@ -41,9 +41,9 @@
     alt: [
       " lightbg"
     ],
-    sliceContent: {
+    bricks: {
       title: "LBM Operations Software",
-      discription: "discrption",
+      description: "description",
       imageurl: "https://placekitten.com/640/360",
       iconurl: [
         { icnurl: "src/assets/btn-xlrg-alt1.svg"
@@ -60,8 +60,8 @@
     alt: [
       " darkbg"
     ],
-    sliceContent: {
-      boxycontent: [
+    bricks: {
+      gridItems: [
         { item: "Inventory Management"
         },
         { item: "Risk Management"
@@ -90,11 +90,11 @@
     alt: [
       " lightbg"
     ],
-    sliceContent: {
-      discription: {
+    bricks: {
+      description: {
         title: "Inventory Management",
-        discription: "Our system eliminates time now spent on internal cross-checking by providing all stakeholders real-time inventory data, informing both purchasing and sales on what to buy and what is available to sell. ",
-        benlist: [
+        description: "Our system eliminates time now spent on internal cross-checking by providing all stakeholders real-time inventory data, informing both purchasing and sales on what to buy and what is available to sell. ",
+        dataList: [
           { item: "Benifit"
           },
           { item: "Benifit"
@@ -124,24 +124,24 @@
     alt: [
       " lightbg"
     ],
-    sliceContent: {
+    bricks: {
       title: "Manage Voaltility and Reduce Risk",
-      discription: "The BuyChain system eliminates longtime, industry-wide constraints on profitability and growth with the tools, control, and data you need to gain a competitive edge. We have married technology with customer service in a way that has not previously existed in our industry.",
-      boxycontent: [
+      description: "The BuyChain system eliminates longtime, industry-wide constraints on profitability and growth with the tools, control, and data you need to gain a competitive edge. We have married technology with customer service in a way that has not previously existed in our industry.",
+      gridItems: [
         {
           imgurl: "https://placekitten.com/640/360",
           title: "Buy",
-          discription: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
+          description: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
         },
         {
           imgurl: "https://placekitten.com/640/360",
           title: "Manage",
-          discription: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
+          description: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
         },
         {
           imgurl: "https://placekitten.com/640/360",
           title: "Sell",
-          discription: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
+          description: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
         }
       ]
     }
@@ -151,25 +151,25 @@
     alt: [
       " lightbg"
     ],
-    sliceContent: {
+    bricks: {
       title: "Recent Post",
-      boxycontent: [
+      gridItems: [
         {
           date: "01/01/1999",
           articletitle: "article title here",
-          discription: "discription",
+          description: "description",
           readmore_url: "https://www.w3schools.com/css/css_pseudo_elements.asp"
         },
         {
           date: "01/01/1999",
           articletitle: "article title here",
-          discription: "discription",
+          description: "description",
           readmore_url: "https://www.w3schools.com/css/css_pseudo_elements.asp"
         },
         {
           date: "01/01/1999",
           articletitle: "article title here",
-          discription: "discription",
+          description: "description",
           readmore_url: "https://www.w3schools.com/css/css_pseudo_elements.asp"
         }
       ]
@@ -203,9 +203,9 @@
     alt: [
       " lightbg"
     ],
-    sliceContent: {
+    bricks: {
       title: "Replace your hammer with a nail gun.",
-      sub_moduleHotspot: {
+      atoms: {
         type: "buttons",
         alt: [
           ""
@@ -231,13 +231,13 @@
           }
         ]
       },
-      boxycontent: [
+      gridItems: [
         {
           sub_header: " operations ",
-          discription: "discription",
+          description: "description",
           category: " ",
           subtitle: "popular features",
-          list_items: [
+          itemsList: [
             { item: "Feature"
             },
             { item: "Feature"
@@ -247,7 +247,7 @@
             { item: "Feature"
             },
           ],
-          sub_moduleHotspot: {
+          atoms: {
             type: "buttons",
             buttonlist: [
               {
@@ -273,10 +273,10 @@
         },
         {
           sub_header: " capital ",
-          discription: "discription",
+          description: "description",
           category: " BETA ",
           subtitle: "popular features",
-          list_items: [
+          itemsList: [
             { item: "Feature"
             },
             { item: "Feature"
@@ -295,10 +295,10 @@
         },
         {
           sub_header: " dashboard ",
-          discription: "discription",
+          description: "description",
           category: " FREE ",
           subtitle: "popular features",
-          list_items: [
+          itemsList: [
             { item: "Feature"
             },
             { item: "Feature"
@@ -316,7 +316,3 @@
       ]
     }
   },
-
-
-
-

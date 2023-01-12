@@ -6,24 +6,27 @@ defineProps({
 
 
 <template>
-  <img :src="herocont.herobg">
+  <img :src="herocont.bgImage">
   <div class="inner-container">
     <img :src="herocont.imageurl" alt="">
     <div class="content">
       <div class="content-block">
         <div>
           <h2>{{ herocont.title }}</h2>
-          <p>{{ herocont.contentBlocks[0].discription }}</p>
+          <p>{{ herocont.contentBlocks[0].description }}</p>
           <!-- <div v-for="bob in herocont.contentBlocks[0] ">  -->
 
 
 
-          <div :data-content="JSON.stringify(contentBlock)" v-for="contentBlock in herocont.contentBlocks"> {{ JSON.stringify(bob) }}{{ bob }}
+          <div :data-content="JSON.stringify(contentBlock)" v-for="contentBlock in herocont.contentBlocks"> {{
+            JSON.stringify(bob)
+          }}{{ bob }}
 
-            <div :data-smH="JSON.stringify(smH)" v-for="smH in contentBlock.sub_moduleHotspot">
+            <div :data-smH="JSON.stringify(smH)" v-for="smH in contentBlock.atoms">
 
               <!-- <pre>{{JSON.stringify(rob)}}</pre> -->
-              <a :data-button="JSON.stringify(button)" v-for="button in smH.buttonlist" :href="button.url" :class="button.type">
+              <a :data-button="JSON.stringify(button)" v-for="button in smH.buttonlist" :href="button.url"
+                :class="button.type">
                 <!-- {{JSON.stringify(shawn)}} -->
                 <span>{{ button.text }}</span>
               </a>
@@ -37,9 +40,9 @@ defineProps({
             {{ rob }}
           </div> -->
           <!-- </div> -->
-          <!-- <div >{{herocont.contentBlocks.sub_moduleHotspot}}</div> -->
+          <!-- <div >{{herocont.contentBlocks.atoms}}</div> -->
           <!-- <div class="svg-btn-grid">
-            <img v-for=" heroimg, index in herocont.contentBlocks[0].sub_moduleHotspot" :key="index" :src="heroimg.icnurl" alt="">
+            <img v-for=" heroimg, index in herocont.contentBlocks[0].atoms" :key="index" :src="heroimg.icnurl" alt="">
           </div>
           <div v-for=" bob, index in herocont.sub_modulesHotspot " :key="index">
             <a href=""> {{ bob }}</a>

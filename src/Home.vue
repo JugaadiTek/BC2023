@@ -16,6 +16,7 @@ import btnType1 from "./components/btnType1.vue";
 import btnType2 from "./components/btnType2.vue";
 import btnType3 from "./components/btnType3.vue";
 import btnType4 from "./components/btnType4.vue";
+import heroBannerUpdate from "./components/parallax.vue";
 
 import { ref } from 'vue';
 
@@ -651,6 +652,7 @@ const slices = ref([
       <btnType2/>
       <btnType3/>
       <btnType4/>
+      <heroBannerUpdate/>
     </nav>
 
 

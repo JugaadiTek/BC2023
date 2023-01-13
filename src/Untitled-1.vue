@@ -42,8 +42,8 @@ console.log(this);
           </div> -->
           <!-- <span>{{ JSON.stringify(items.data.translations[0].body[0]) }}</span> -->
           <ul>
-            <li v-for="item in items.keys(translations)">
-              <span>{{ item }}</span></li>
+            <!-- <li v-for="item in items.keys(translations)"> -->
+              <!-- <span>{{ item }}</span></li> -->
             <!-- <li :data-div="item,never)" v-for=" (item, index) in items" :key="index" > -->
               <!-- <span v-for="piece in item.translations"></span> {{piece}} </li> -->
             <!-- <li>{{ item }}</li> -->

@@ -18,8 +18,8 @@ defineProps({
             <p>{{ cardcont.description }}</p>
             <hr>
             <h4>{{ cardcont.subtitle }}</h4>
-            <ul v-for="(items, index) in cardcont.itemsList" :key="index">
-              <li> <i class="fa-solid fa-circle-check"></i> {{ items.item }}</li>
+            <ul>
+              <li v-for="(items, index) in cardcont.itemsList" :key="index"> <i class="fa-solid fa-circle-check"></i> {{ items.item }}</li>
             </ul>
             <div v-for="(btton, index) in cardcont.atoms" :key="index">
 
@@ -48,6 +48,7 @@ h4 {
   margin: auto;
 }
 
+
 .content-block>div>div {
   padding: 45px 40px;
 }
@@ -62,7 +63,7 @@ h4 {
 }
 
 .content-block>div>div {
-  background-color: aliceblue;
+  background-color: var(--brand-white);
   text-align: left;
   border: 1px solid #e9e5f1;
   border-radius: 5px;
@@ -77,7 +78,7 @@ hr {
   padding-left: 1rem;
 }
 
-.content-block>div>div>div>a {
+/* .content-block>div>div>div>a {
   color: #280071;
   border: 1.5px solid #280071;
   font-weight: bold;
@@ -88,7 +89,7 @@ a {
   color: whitesmoke;
   font-weight: bold;
   background-color: #280071;
-}
+} */
 
 @media (max-width: 800px) {
   .content-block>div {

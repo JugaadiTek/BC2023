@@ -12,20 +12,20 @@
 
             <span>
               <label for="fname">First name</label>
-              <input type="text" id="fname" name="fname">
+              <input type="text" id="fname" name="fname" placeholder="First Name">
             </span>
 
             <span>
               <label for="lname">Last name</label>
-              <input type="text" id="lname" name="lname">
+              <input type="text" id="lname" name="lname" placeholder="Last Name">
             </span>
 
             <span>
-              <label for="workemail">Work Email</label>
-              <input type="text" id="workemail" name="workemail">
+              <label for="workemail">Email</label>
+              <input type="text" id="workemail" name="workemail" placeholder="Email">
             </span>
 
-            <span><input type="submit" value="send"></span>
+            <span><input type="submit" value="Sign Up"></span>
 
           </form>
         </div>
@@ -57,5 +57,9 @@ form > span:last-child > input {
 
 label {
   color: var(--primary);
+}
+
+.newsletter .container {
+  background-color: blue;
 }
 </style>

@@ -24,22 +24,15 @@ defineProps({
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-li {}
-
 ul {
   margin: unset;
   padding: unset;
   padding: 8px 0;
 }
 
-@media (max-width: 600px) {
-  .content-block {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
 
 @media (max-width: 400px) {
-  .content-block {
+  .optionslice ul {
     grid-template-columns: repeat(1, 1fr);
   }
 }

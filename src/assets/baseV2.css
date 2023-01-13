@@ -283,7 +283,10 @@ section.darkbg .font-300 {
 .darkbg {
   background-color: var(--primary);
     color:var(--bg-layer-100);
-
+}
+.lavanderBg {
+    background-color: var(--bg-layer-600);
+    color: var(--primary);
 }
 /* 
 ███████████████████████████████████████████

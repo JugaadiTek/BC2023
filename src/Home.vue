@@ -218,7 +218,7 @@ const slices = ref([
         { id: 0, note: "" }
       ]
     },
-    alt: ["nogap-top", "nogap-bottom", ""],
+    alt: ["nogap-top", ""],
     bricks: {
       atoms: [
         { url: "https://www.flaticon.com/free-icon/browser_3214744", altText: "text", type: "icon", styleModifiers: "" },
@@ -235,47 +235,47 @@ const slices = ref([
       bgImageAltText: ""
     }
   },
-  {
-    component: "ctaHero",
-    // component: "blockquoteSlider",
-    alt: ["fullwidth darkbg"],
-    backgroundImage: "",
-    devnotes: {
-      moduleIDs: [4, 19, 28],
-      generalNotes: "",
-      moduleSpecificNotes: [
-        { id: 0, note: "" }
-      ]
-    },
-    bricks: [
-      {
-        icon: "fontawesomeIcon",
-        rating: 5,
-        quote: "header txt",
-        attribution: "firstname lastname",
-        jobTitle: "software engineer"
-      }
-    ]
-  },
+  // {
+  //   component: "ctaHero",
+  //   // component: "blockquoteSlider",
+  //   alt: ["fullwidth darkbg"],
+  //   backgroundImage: "",
+  //   devnotes: {
+  //     moduleIDs: [4, 19, 28],
+  //     generalNotes: "",
+  //     moduleSpecificNotes: [
+  //       { id: 0, note: "" }
+  //     ]
+  //   },
+  //   bricks: [
+  //     {
+  //       icon: "fontawesomeIcon",
+  //       rating: 5,
+  //       quote: "header txt",
+  //       attribution: "firstname lastname",
+  //       jobTitle: "software engineer"
+  //     }
+  //   ]
+  // },
   // {
   //   component: "rawhtml"
 
   // },
 
-  {
-    component: "singleimage",
-    devnotes: {
-      module: [26, 0],
-      generalNotes: "",
-      moduleSpecificNotes: [
-        { module: 0, note: "" }
-      ]
-    },
-    imageurl: "url",
-    altText: "randommtext",
-    linkurl: ""
+  // {
+  //   component: "singleimage",
+  //   devnotes: {
+  //     module: [26, 0],
+  //     generalNotes: "",
+  //     moduleSpecificNotes: [
+  //       { module: 0, note: "" }
+  //     ]
+  //   },
+  //   imageurl: "url",
+  //   altText: "randommtext",
+  //   linkurl: ""
 
-  },
+  // },
   {
     component: "split_ImgTxt",
     devnotes: {
@@ -366,7 +366,7 @@ const slices = ref([
         { module: 0, note: "" }
       ]
     },
-    alt: ["lightbg"],
+    alt: ["lightbg","nogap-top"],
     bricks: {
       details: {
         title: "Inventory Management",
@@ -589,7 +589,7 @@ const slices = ref([
         { id: 0, note: "" }
       ]
     },
-    alt: ["nogap-bottom", "lavanderbg"],
+    alt: ["nogap", "lavanderBg"],
     embedCode: "",
     shortcode: "",
     content: ""
@@ -670,8 +670,6 @@ const slices = ref([
   <footer class="container">
     <footerSlice />
   </footer>
-
-
 
 </template>
 

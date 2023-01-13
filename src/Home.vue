@@ -12,10 +12,10 @@ import Postfeed from "./components/postfeed.vue";
 import split_ImgTxt from "./components/split_ImgTxt.vue";
 import footerSlice from "./components/footerSlice.vue";
 // import rawhtml from "./components/rawhtml.vue";
-import btnType1 from "./components/btnType1.vue";
-import btnType2 from "./components/btnType2.vue";
-import btnType3 from "./components/btnType3.vue";
-import btnType4 from "./components/btnType4.vue";
+// import btnType1 from "./components/btnType1.vue";    // <---different variation of buttons
+// import btnType2 from "./components/btnType2.vue";
+// import btnType3 from "./components/btnType3.vue";
+// import btnType4 from "./components/btnType4.vue";
 // import parallaxHero from "./components/parallaxHero.vue";
 
 import { ref } from 'vue';
@@ -218,11 +218,12 @@ const slices = ref([
         { id: 0, note: "" }
       ]
     },
-    alt: ["nogap-top", ""],
+    alt: ["nogap-top", "nogap-bottom", ""],
     bricks: {
       atoms: [
-        { url: "url", altText: "text", type: "type1" },
-        { url: "url", altText: "text", type: "type2" }
+        { url: "https://www.flaticon.com/free-icon/browser_3214744", altText: "text", type: "icon", styleModifiers: "" },
+        { url: "https://www.flaticon.com", text: "buttonName", type: "button", styleModifiers: ""},
+        { url: "url", altText: "text", type: "image", styleModifiers: "" }
       ],
       title: "Made For The Market",
       description: "BuyChain is the end-to-end supply chain management software built for the LBM industry. We unify and mobilizes your sales, inventory, and banking so that you can meet the demands of an increasingly volatile market.",
@@ -231,25 +232,7 @@ const slices = ref([
       ],
       bgImage: "src/assets/AdobeStock_504230989.jpeg",
       bgImageOverlay: "src/assets/8562956_25550 [Converted].svg",
-      bgImageAltText: "",
-      atoms: [
-        {
-          type: "buttons",
-          alt: [""],
-          buttonlist: [
-            {
-              url: "https://www.w3schools.com/graphics/svg_intro.asp",
-              text: "Solutions",
-              type: ["alt1", "class1", "animationX"]
-            },
-            {
-              url: "https://www.w3schools.com/graphics/svg_intro.asp",
-              text: "Schedule Demo",
-              type: ["alt2", "class2", "animationY"]
-            }
-          ]
-        }
-      ]
+      bgImageAltText: ""
     }
   },
   {
@@ -274,10 +257,10 @@ const slices = ref([
       }
     ]
   },
-  {
-    component: "rawhtml"
+  // {
+  //   component: "rawhtml"
 
-  },
+  // },
 
   {
     component: "singleimage",

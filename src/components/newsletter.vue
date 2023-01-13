@@ -7,7 +7,7 @@
           <form action="">
             <!-- check if this is right way to do  -->
             <span>
-              <h2>Newsletter Sign Up</h2>
+              <h2>Join Our Newsletter</h2>
             </span>
 
             <span>
@@ -53,5 +53,9 @@ form>span>input {
 
 form > span:last-child > input {
   border: 2px solid var() ;
+}
+
+label {
+  color: var(--primary);
 }
 </style>

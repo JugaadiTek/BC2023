@@ -22,7 +22,7 @@ defineProps({
           <h2>{{ herocont.title }}</h2>
           <p>{{ herocont.description }}</p>
           <!-- <span >
-            <a v-for="button in herocont.atoms.buttonlist[0]" :href="button.url">{{ button.text }}</a>
+            <a v-for="(atom, index) in herocont.atoms" :key="index" :href="atom.url">{{atom.text}}</a>
           </span> -->
         </div>
         <img v-for="image in herocont.imageList" :src="image.imageurl" alt="">
@@ -33,6 +33,7 @@ defineProps({
 </template>
 
 <style scoped>
+
 .content-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -46,7 +47,6 @@ defineProps({
 }
 
 section.hero {
-
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -63,7 +63,9 @@ section.hero {
   transform: translate(-100%, -100%);
 } */
 
-/* parallax effect heor banner */
+
+
+/* parallax effect hero banner */
 .heroBannerContainer {
   position: relative;
 }
@@ -76,7 +78,6 @@ section.hero {
   filter: blur(1px);
   -webkit-filter: blur(1px);
   position: absolute;
-  width: 100%;
   z-index: -1;
   top: 100%;
   left: 100%;

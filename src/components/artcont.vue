@@ -11,12 +11,8 @@ defineProps({
       <div class="content-block">
         <h2>{{ artcontent.title }}</h2>
         <p> {{ artcontent.description }} </p>
-
         <div v-for="guddu in artcontent.gridItems">
-
           <img :src="guddu.imgurl" alt="" height="220" width="370">
-
-
           <div>
             <h3>{{ guddu.title }}</h3>
             <p> {{ guddu.details }}</p>

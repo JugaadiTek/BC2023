@@ -1,0 +1,92 @@
+//==================================================
+//=================== Components ===================
+//==================================================
+    //============
+    // Hero Banner
+    //============
+
+     // moduleIDs: [1, 9, 13, 25, 6, 22, 31, 34, 38, 40, 43]
+[  { // The Hero Banner Slice
+  // [[[[[[INSERT SAVE SLICE ID HERE]]]]]]]]]]]]]]  (if saved slice)
+  "slice": "hero",                                  // Full Width Horizontal Cut of the page  
+  "variant": "paralax/halves/short/overlap",        // Slice Variant  
+  "styleMods": ["nogap-top","darkbg"],              // Slice Extra CSS Classes
+  "herobg": "/src/assets/BG Blank.jpg",
+  "herobgAltText": "",
+  // [[[[[[INSERT MODOCOSM GRID STRUCTURE HERE]]]]]]]] (if grid structure)
+
+  "bricks": [// A Brick builds out the structure of the slice.     
+    {// [[[[[[INSERT MODOCOSM GRID STRUCTURE HERE]]]]]]]] (if grid structure)
+      "brick": "content",                 // Brick Type
+      "title": "Made For The Market",     // Brick Title
+      "wysiwyg": "asdfasdfasdf",          // Brick WYSIWYG Content
+      "list": {                        
+        "listDetails": {"type":"buttons","has":["imageIcons","fontAwesomeIcons"], "styleMods":["nogap-top"] },
+        "listFill": [{ "url":"https://fb.com", "icon":"",   "altText":"",  "text":"sometext",    "type":["alt1","class3","animationX"]}]
+      },
+      "atoms":[
+        //[[[[[[INSERT IMAGE KV SET HERE]]]]]]
+      ]
+    },{
+      "brick":"gridItem",
+      "styleMods":[],
+      "atom":{/*[[[[[[INSERT IMAGE KV SET HERE]]]]]] */}
+    }]
+  },
+  //============
+  // Raw Content
+  // This is a WYSIWYG slice that allows you to add raw HTML to the page.
+  //============
+  { 
+    "slice": "raw",
+    "content":"<div class='container'><div class='row'><div class='col-12'><h1>Raw HTML</h1></div></div></div>"
+  },
+  //============
+  // Single Image
+  // This is a slice that allows you to add a single image to the page.
+  //============
+  { 
+    "slice": "singleimage",
+    "imageurl": "https://placekitten.com/640/360",
+    "altText": "randommtext",
+    "linkurl": ""
+  },
+  //============
+  { 
+    "slice": "split_ImgTxt",
+    "styleMods": ["nogap-top", ""],    // devnotes: {  module: [3, 11, 14, 18, 20, 37],  generalNotes: "",  moduleSpecificNotes: [    { module: 0, note: "" }  ]},
+    "bricks": {
+      "title": "Made For The Market", 
+      "brandLogo": [{ 
+        "url": "url/url", 
+        "altText": "text" }
+    ],
+      "contentBlocks": [{  "description": "description example",
+          atoms: [            //, devnotes: { modules: [3, 0], note: "always 3 icon buttons" }
+            {  type: "buttons", styleMods: [""], 
+               buttonlist:  [   { url: "https://placekitten.com/640/360", text: "text 1", type: ["alt1", "class3", "animationX"] },    { url: "https://placekitten.com/640/360", text: "text 1", type: ["alt1", "class3", "animationX"] }, { url: "https://placekitten.com/640/360", text: "text 1", type: ["alt1", "class3", "animationX"] }   ] },
+            //  devnotes: {                modules: [3, 0], note: "always 3 icon buttons"              }, 
+            { type: "iconbutton", styleMods: [""], 
+              buttonlist:[{url: "https://placekitten.com/640/360", iconurl: "/url", altText: "text",type: ["alt1", "class3", "animationX"]},{url: "https://placekitten.com/640/360", iconurl: "/url", altText: "text",type: ["alt1", "class3", "animationX"]},{url: "https://placekitten.com/640/360", iconurl: "https://placekitten.com/640/360", altText: "text",type: ["alt1", "class3", "animationX"]}]}]}],
+      imageurl: "https://placekitten.com/640/360",
+      imaAbs: [        { imgabUrl: "", top: 0, left: 0, height: "", width: "" }    ]}},
+  
+]
+
+// Bricks
+
+// Atoms
+
+// Reused Key Value Pairs.
+[
+  // CSS Grid Structure
+  {"grid":[{"xs":1},{"sm":1},{"md":1},{"lg":1},{"xl":24},{"uw":24},{"xxl":24}]},
+  // Return Saved Slice Instead.
+  {"savedSlice":false,"savedSliceID": 1384},
+  // Image Atom 
+  {"type":"image","url": "htts://placekitten.com/640/360","altText":"","injectPos":"before"},
+  {},
+  {},
+  {},
+  
+]

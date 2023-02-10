@@ -356,6 +356,10 @@ li:active .answer,li:hover .answer, li:focus .answer {
 }
 /* Paurush */
 
+.shortHero {
+    background-image: url('src/assets/BG Blank.jpg');
+}
+
 /* Dev Shit */
 .devh .container, .devh .inner-container, .devh section, .devh main, .devh a {
     border:4px dashed black ;  

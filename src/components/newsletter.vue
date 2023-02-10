@@ -34,10 +34,6 @@
 
 <style scoped >
 
-.inner-container {
-  width: max-content;
-}
-
 form>span {
   display: inline-block;
   text-align: left;
@@ -57,9 +53,5 @@ form > span:last-child > input {
 
 label {
   color: var(--primary);
-}
-
-.newsletter .container {
-  background-color: blue;
 }
 </style>

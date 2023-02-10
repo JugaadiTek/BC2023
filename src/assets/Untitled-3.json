@@ -1,0 +1,26 @@
+[
+	{
+		"text": "$t:live",
+		"value": "live",
+		"foreground": "#FFFFFF",
+		"background": "var(--primary)"
+	},
+	{
+		"text": "$t:Rollback",
+		"value": "Rollback",
+		"foreground": "#18222F",
+		"background": "#D3DAE4"
+	},
+	{
+		"text": "$t:Maintenance",
+		"value": "Maintenance_Mode",
+		"foreground": "#18222F",
+		"background": "#D3DAE4"
+	},
+	{
+		"text": "$t:migrating",
+		"value": "migrating",
+		"foreground": "#FFFFFF",
+		"background": "var(--warning)"
+	}
+]

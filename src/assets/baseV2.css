@@ -44,27 +44,29 @@
     ╔╾VARIABLE NAME┈╼╤╾COLOR HEX┈╼╤╾┈┈VARIABLE NAME┈┈┈╼╤╾ R┈╼╤╾┈G╼╤╾B╼╗ */
     --brand-black    : #000000; --brand-black-rgb    :   0,   0,   0;
     --brand-white    : #FFFFFF; --brand-white-rgb    : 255, 255, 255;
- /* 0000╔╾┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈PRIMARY┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼╗ */
-    --primary        : #280071; --primary-rgb-rgb    :  40,   0, 113;
+ /* ╔╾┈┈PRIMARY┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈PRIMARY┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼╗ */
+    --primary        : #280071; --primary-rgb        :  40,   0, 113;
     --primary-dark   : #010044; --primary-dark-rgb   :   1,   0,  44;
     --primary-light  : #5B2FA0; --primary-light-rgb  :  91,  47, 160;
- /* ╔╾┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈SECONDARY┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼╗ */
+ /* ╔╾┈┈┈┈SECONDARY┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈SECONDARY┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼╗ */
     --secondary      : #69B3E7; --secondary-rgb      : 105, 179, 231;
     --secondary-dark : #2F84B5; --secondary-dark-rgb :  47, 132, 181;
     --secondary-light: #9EE5FF; --secondary-light-rgb: 158, 229, 255;
- /* ╔╾┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ACCENT┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼╗ */
+ /* ╔╾┈┈┈┈┈ACCENT┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ACCENT┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼╗ */
     --accent         : #8ED6DB; --accent-rgb         : 142, 214, 219;
     --accent-dark    : #67BFC6; --accent-dark-rgb    : 103, 191, 198;
     --accent-light   : #B4ECF0; --accent-light-rgb   : 180, 236, 240;
- /* ╔╾┈┈┈┈┈┈┈┈┈┈┈┈BACKGROUND┈┈┈LAYERING┈┈┈FRAMEWORK┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼╗ */
+ /* ╔╾┈┈┈┈BACKGROUND┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈LAYERING┈┈┈FRAMEWORK┈┈┈╼╗ */
     --bg-layer-100   : #F7F6FA; --bg-layer-100-rgb   : 247, 246, 250;
     --bg-layer-200   : #F4F3F8; --bg-layer-200-rgb   : 244, 243, 248;
     --bg-layer-300   : #F1EFF6; --bg-layer-300-rgb   : 241, 239, 246;
     --bg-layer-400   : #ECE8F3; --bg-layer-400-rgb   : 236, 232, 243;
     --bg-layer-500   : #EEEBF5; --bg-layer-500-rgb   : 238, 235, 245;
     --bg-layer-600   : #E9E5F1; --bg-layer-600-rgb   : 233, 229, 241; 
- /* ╔╾┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈SYSTEM/ENVIRONMENT┈┈┈VARIABLES┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼╗ */
-   --ec-neutral: #CECFCB;  --ec-success: #00A38D;  --ec-fail: #D11257; 
+ /* ╔╾┈┈SYS/ENV┈VARIABLES┈┈┈┈┈┈┈┈┈┈┈┈SYS/ENV┈VARIABLES┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼╗ */
+   --ec-neutral      : #CECFCB; --ec-neutral-rgb     :              ; 
+   --ec-success      : #00A38D; --ec-success-rgb     :              ;
+   --ec-fail         : #D11257; --ec-fail-rgb        :              ;     
 /* 
 ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ 
 ░░░░▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ FONTS  COMPUTED ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓░░░░ 
@@ -87,7 +89,7 @@
 ░░░░▓████████████████████████████████████████████▓░░░░ 
     ╔╾┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈Spacers┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼╗          */
     --spacer-unit : 8px ;                                   /*    8px */  /*MAIN*/  /*** BASE UNIT ***/
-    --spacer-xxs  : calc(var(--spacer-unit) *  2 );         /*   16px */  /*MAIN*/  /* Container Margin, Inner-Container Padding */
+    --spacer-xxs  : calc(var(--spacer-unit) *  2);         /*   16px */  /*MAIN*/  /* Container Margin, Inner-Container Padding */
     --spacer-xs   : calc(var(--spacer-unit) *  3);          /*   24px */            /* Grid-Gap */
     --spacer-s    : calc(var(--spacer-unit) *  4);          /*   32px */  /*MAIN*/  /*          */
     --spacer-ms   : calc(var(--spacer-unit) *  6);          /*   48px */
@@ -145,6 +147,8 @@
         --font-size-50 :  11px; --font-lh-50  :  16px;
     }
 }
+
+
 /*  ⬆⬆⬆⬆ Between 0PX-991PX WIDE ⬆⬆⬆⬆ FOR ALL PHONES ⬆⬆⬆⬆═══╗
     ⬇⬇⬇⬇⬇⬇⬇ Above 992PX WIDE ⬇⬇⬇⬇⬇⬇⬇⬇ GO TO LAPTOPS ⬇⬇⬇⬇   ╚⭈⭈⭈NOTE: ALL STYLES ABOVE CONTINUE TO APPLY, OVERRULE THEM WITH OTHER CSS IF NEEDED.     
 ▓▓███████████████████████████████████████████████████████████████████████
@@ -154,8 +158,8 @@
 ▓▓███████████████████████████████████████████████████████████████████████▓▓ */
 @media(min-width:992px) { }
 
-/*  ⬆⬆⬆⬆ Between 0PX-1159PX WIDE ⬆⬆⬆⬆ FOR ALL MOBILE ⬆⬆⬆⬆⬆═══╗
-    ⬇⬇⬇⬇⬇⬇⬇ Above 1200PX WIDE ⬇⬇⬇⬇⬇⬇⬇⬇ GO TO LAPTOPS ⬇⬇⬇⬇⬇   ╚⭈⭈⭈NOTE: ALL STYLES ABOVE CONTINUE TO APPLY, OVERRULE THEM WITH OTHER CSS IF NEEDED.     
+/*  ⬆⬆⬆⬆ Between 0PX-1159PX WIDE ⬆⬆⬆⬆ FOR ALL MOBILE ⬆⬆⬆⬆⬆    ═══╗
+    ⬇⬇⬇⬇⬇⬇⬇ Above 1200PX WIDE ⬇⬇⬇⬇⬇⬇⬇⬇ GO TO LAPTOPS ⬇⬇⬇⬇⬇       ╚⭈⭈⭈NOTE: ALL STYLES ABOVE CONTINUE TO APPLY, OVERRULE THEM WITH OTHER CSS IF NEEDED.     
 ▓▓█████████████████████████████████████████████████████████████████████████████████████████████████████
 ▓▓████████ MACBOOK PRO ████ HD DISPLAY IN EMULATED RESOLUTION MODE ████ 720P MONITORS ████ 720P TVs ███▓▓
 ▓▓█████████████████████████████████████████████████████████████████████████████████████████████████████▓▓
@@ -173,7 +177,7 @@
         --font-size-600:  24px; --font-lh-600 :  36px;
         --font-size-500:  24px; --font-lh-500 :  32px;
 /* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
-        --font-size-400:  20px; --font-lh-400 :  32px; /* ROOT */ /* Thise is the center value we are working from */
+        --font-size-400:  20px; --font-lh-400 :  32px; /* ROOT */ /* This is the center value we are working from */
 /* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
         --font-size-300:  20px; --font-lh-300 :  24px; 
         --font-size-200:  18px; --font-lh-200 :  40px;
@@ -182,6 +186,7 @@
         --font-size-50 :  11px; --font-lh-50  :  16px;
     }
 }
+
 /*  ⬆⬆⬆⬆ Between 0PX-1499PX WIDE ⬆⬆⬆⬆ FOR ALL MOBILE AND MOST LAPTOPS ⬆⬆⬆⬆⬆═══╗
     ⬇⬇⬇⬇⬇⬇⬇ Above 1500PX WIDE ⬇⬇⬇⬇⬇⬇⬇ GO TO HIGH RESOLUTION PRODUCTS ⬇⬇⬇⬇⬇⬇   ╚⭈⭈⭈NOTE: ALL STYLES ABOVE CONTINUE TO APPLY, OVERRULE THEM WITH OTHER CSS IF NEEDED.
 ▓▓████████████████████████████████████████████████████████████████████████████████████████████████

@@ -1,0 +1,44 @@
+{
+  "slice": "hero", "type": "paralax/halves/short/overlap",
+  "styleMods": ["nogap-top","darkbg"],
+  "heroBG": "/src/assets/BG Blank.jpg",
+  "bricks": {
+      "order": {"mobile": 1,"tablet":2,"desktop":3}, 
+      "atoms": [
+        { "atom":"image", "url": "url/url", "altText": "text"},{ "type":"buttons","styleMods": ["",""], "animations":"",
+          "list": [ 
+            { 
+              "url"   : "anyURL",
+              "text"  : "sometext",
+              "target": ["_blank","_self","_parent","_top"],
+              "rel"   : ["no referrer","no opener","no follow","no index"],
+              "type"  : "Primary/secondary/tertiary",
+              "flairs": ["animationClass1", "animationClass2"]
+            } 
+          ]
+        }
+      ],
+      "title": "AnyString",
+      "description": "asdfasdfasdf",
+    },
+    "imageBlock": {
+      "imageurl": "urlString",
+      "herobgAltText": "AnyText"
+    }
+     [
+      ,
+      {
+        "type": "iconbutton",
+        "alt": ["",""],
+        "buttonlist": [{
+          "url": "notporn.com",
+          "iconurl": "/url",
+          "text": "sometext",
+          "altText": "text",
+          "flair": [ "animationClass1", "animationClass2"],
+          "type":  [ "alt1",  "class3", "animationX"     ]
+        }]
+      }
+    ]
+  }
+}

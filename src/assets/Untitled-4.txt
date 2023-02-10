@@ -1,0 +1,17 @@
+"ALTER TABLE ""public"".""overflow""
+ ADD CONSTRAINT ""overflow_foreign_fKey"" 
+ FOREIGN KEY (""foreign"")
+ REFERENCES ""public"".""form_embed_raw""(""id"")
+ ON UPDATE NO ACTION ON DELETE NO ACTION,
+ ADD CONSTRAINT ""overflow_foreign_fKey"" 
+ FOREIGN KEY (""foreign"")
+ REFERENCES ""public"".""button_list""(""id"")
+ ON UPDATE NO ACTION ON DELETE NO ACTION;ALTER TABLE ""public"".""overflow""
+ ADD CONSTRAINT ""overflow_foreign_fKey"" 
+ FOREIGN KEY (""foreign"")
+ REFERENCES ""public"".""form_embed_raw""(""id"")
+ ON UPDATE NO ACTION ON DELETE NO ACTION,
+ ADD CONSTRAINT ""overflow_foreign_fKey"" 
+ FOREIGN KEY (""foreign"")
+ REFERENCES ""public"".""button_list""(""id"")
+ ON UPDATE NO ACTION ON DELETE NO ACTION;"

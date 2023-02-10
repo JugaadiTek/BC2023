@@ -1,7 +1,7 @@
 <script setup>
-// defineProps({
-//   herocont: []
-// })
+defineProps({
+  herocont: []
+})
 </script>
 
 
@@ -20,7 +20,7 @@
         <div class="content-half">
           <div>
             <img v-for="logo in herocont.brandLogoList" :src="logo.url" :alt="logo.alt">
-            <h2>{{ herocont.title }}</h2>
+            <h2>{{ herocont.title }}</h2>+-
             <p>{{ herocont.description }}</p>
             <span>
               <a href="">
@@ -43,6 +43,8 @@
     </div>
   </div>
 </template>
+
+
 
 <style scoped>
 

@@ -193,9 +193,51 @@ const footer = ref([
 
 //=================== OTHER COMPONENT JSON  =======================
 //=================================================================
+const header = ref([
+
+])
+const articleTags = ref ([
+
+])
+
+const article = ([
+
+])
+const sidebar = ([
+
+])
+
 
 const slices = ref([
 
+  {
+    component: "heroWithForm",
+    type: "halves/short/overlap",
+    devnotes: {
+      moduleIDs: [1, 9, 13, 25, 6, 22, 31, 34, 38, 40, 43],
+      generalNotes: "",
+      moduleSpecificNotes: [
+        { id: 0, note: "" }
+      ]
+    },
+    alt: ["nogap-top", "darkbg"],
+    bricks: {
+      title: "Made For The Market",
+      description: "BuyChain is the end-to-end supply chain management software built for the LBM industry. We unify and mobilizes your sales, inventory, and banking so that you can meet the demands of an increasingly volatile market.",
+      bgImage: "src/assets/AdobeStock_504230989.jpeg",
+      bgImageAltText: "its a background image",
+    }
+  },
+
+  {
+    component: "articleSlice",
+    bricks: {
+      wysiwyg: '<h2>article subtitle</h2> <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.Ut laboriosam aliquid ducimus, nihil maiores asperiores in consequuntur officiis aliquam assumenda neque necessitatibus reiciendis repellat impedit illo exercitationem vel culpa quis. </p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut laboriosam aliquid ducimus, nihil maiores asperiores in consequuntur officiis aliquam assumenda neque necessitatibus reiciendis repellat impedit illo exercitationem vel culpa quis. </p>',
+      atoms: [
+        { url: "https://www.flaticon.com", text: "Load More", type: "button", styleModifiers: "" }
+      ]
+    }
+  },
 
   {
     component: "shortHero",
@@ -244,22 +286,37 @@ const slices = ref([
 ])
 </script>
 
-
-
 <template>
-  <header></header>
-  <main class="devh-">
+  <main>
 
     <!---------------------- NAVIGATION BAR ---------------------->
-    <nav class="mainNav nogap darkbg" v-for="navigationbar in navigations">
-      <NavBar :navbtn="navigationbar.bricks" />
+    <nav class="mainNav nogap darkbg" >
+      <NavBar :navbtn="mainnav.data" />
     </nav>
+      <heroWithSlice :herocont="hero.data" />
+      <shortHero :herocont="articleTags.data" />
+      <div class="container">
+        <div class="inner-container">
+          <articleBrick :articleSliceCont="article"></articleBrick>
+          <sidebarBrick :articleSliceCont="sidebar"></sidebarBrick>
+        </div>
+      </div>
+      <!-- <articleSlice :articleSliceCont="article.data" /> -->
+      <!-- <newsletter :articleSliceCont="newsletter.bricks" /> -->
+  </main>
 
+  <!-- ----------------------------- FOOTER ----------------------------- -->
 
-    <!---<div class="wrapper">-->
-    <section v-for="(slice, index) in slices" :class="[slice.alt, slice.component]" :id="`section_` + index"
-      :key="index">
-
+  <footer class="container">
+    <footerSlice :data="footer.data"/>
+  </footer>
+</template>
+ <!---<div class="wrapper">-->
+    <!-- <section v-for="(slice, index) in slices" :class="[slice.alt, slice.component]" :id="`section_` + index"
+          :key="index"> -->
+      <!-- <div v-if="slice.component == 'heroWithSlice'">
+        <heroWithSlice :herocont="slice.bricks" />
+      </div>
       
 
       <div v-if="slice.component == 'shortHero'" >
@@ -272,20 +329,10 @@ const slices = ref([
 
 
       <div :class="container" v-else-if="slice.component == 'newsletter'">
-        <newsletter />
-      </div>
+        <newsletter :articleSliceCont="newsletter.bricks"/>
+      </div> -->
 
-    </section>
-  </main>
-
-  <!-- ----------------------------- FOOTER ----------------------------- -->
-
-  <footer class="container">
-    <footerSlice />
-  </footer>
-
-</template>
-
+    <!-- </section> -->
 <style>
 .darkbg.hero {
   background-color: unset;

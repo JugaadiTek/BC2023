@@ -4,21 +4,24 @@ defineProps({
 })
 </script>
 
-
 <template>
   <div class="inner-container">
     <div class="content">
-      <div class="articleTags">
+      <!-- <div class="articleTags">
         <ul>
-          <li> <a href="">{{ articleTag }}</a>
+          <li v-for="tag in tags"> 
+            <a :href="tag.tagLink" class="tagbutton">{{ tag.tagText }}</a>
           </li>
         </ul>
-      </div>
+      </div> -->
       <div class="content-block">
         <div>
           <article class="articleColumn">
             {{ articleSliceCont.wysiwyg }}
           </article>
+          <!-- <article v-for="paragraph in paragraphs">
+            {{ paragraph }}
+          </article> -->
           <aside class="authorColumn">
             <img class="authorImage" src="" alt="">
             <div class="authorInfo">
@@ -27,25 +30,30 @@ defineProps({
               <p>{{ authorBio }}</p>
             </div>
             <div class="authorSocialLinks">
-              <a href="">Twitter</a>
-              <a href="">LinkedIn</a>
-              <a href="">E-mail</a>
-            </div>
-            <div class="articlesByAuthor">
-              <h3>More Articles by {{ authorName }}</h3>
               <ul>
-                <li>
-                  <a href="">Article Title</a>
+                <li v-for="socialLink in socialLinks">
+                  <a :class="socialLink.socialLinkClass" :href="socialLink.socialLinkUrl">
+                    {{ socialLink.socialLinkText }}
+                  </a>
                 </li>
               </ul>
             </div>
+            <div class="articlesByAuthor">
+              <h4>More Articles by {{ authorName }}</h4>
+              <ul>
+                <li v-for="article in articles">
+                  <a :href="articleLink">{{ articleTitle }}</a>
+                </li>
+              </ul>
+            </div>
+            <span>
+              <!-- <a class=" button type_01" :href="">Previous</a> -->
+              <!-- <a class=" button type_02" :href="">Load More</a> -->
+              <!-- <a class=" button type_01" :href="">Next</a> -->
+            </span>
           </aside>
         </div>
-        <span>
-          <a class=" button type_01" href="">Previous</a>
-          <a class=" button type_02" href="">Load More</a>
-          <a class=" button type_01" href="">Next</a>
-        </span>
+        
       </div>
     </div>
   </div>

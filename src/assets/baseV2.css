@@ -288,7 +288,10 @@ section.darkbg .font-300 {
 .darkbg {
   background-color: var(--primary);
     color:var(--bg-layer-100);
-
+}
+.lavanderBg {
+    background-color: var(--bg-layer-600);
+    color: var(--primary);
 }
 /* 
 ███████████████████████████████████████████
@@ -357,6 +360,10 @@ li:active .answer,li:hover .answer, li:focus .answer {
     display:inline-block;
 }
 /* Paurush */
+
+.shortHero {
+    background-image: url('src/assets/BG Blank 2.png');
+}
 
 /* Dev Shit */
 .devh .container, .devh .inner-container, .devh section, .devh main, .devh a {

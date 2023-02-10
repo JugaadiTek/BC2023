@@ -17,6 +17,7 @@ import footerSlice from "./components/footerSlice.vue";
 // import btnType3 from "./components/btnType3.vue";
 // import btnType4 from "./components/btnType4.vue";
 // import parallaxHero from "./components/parallaxHero.vue";
+import ContentPairsRepeater from "./components/ContentPairsRepeater.vue";
 
 import { ref } from 'vue';
 
@@ -218,7 +219,7 @@ const slices = ref([
         { id: 0, note: "" }
       ]
     },
-    alt: ["nogap-top", "nogap-bottom", ""],
+    alt: ["nogap-top", ""],
     bricks: {
       atoms: [
         { url: "https://www.flaticon.com/free-icon/browser_3214744", altText: "text", type: "icon", styleModifiers: "" },
@@ -235,47 +236,53 @@ const slices = ref([
       bgImageAltText: ""
     }
   },
+
   {
-    component: "ctaHero",
-    // component: "blockquoteSlider",
-    alt: ["fullwidth darkbg"],
-    backgroundImage: "",
-    devnotes: {
-      moduleIDs: [4, 19, 28],
-      generalNotes: "",
-      moduleSpecificNotes: [
-        { id: 0, note: "" }
-      ]
-    },
-    bricks: [
-      {
-        icon: "fontawesomeIcon",
-        rating: 5,
-        quote: "header txt",
-        attribution: "firstname lastname",
-        jobTitle: "software engineer"
-      }
-    ]
+     component: ""
   },
+
+ 
+  // {
+  //   component: "ctaHero",
+  //   // component: "blockquoteSlider",
+  //   alt: ["fullwidth darkbg"],
+  //   backgroundImage: "",
+  //   devnotes: {
+  //     moduleIDs: [4, 19, 28],
+  //     generalNotes: "",
+  //     moduleSpecificNotes: [
+  //       { id: 0, note: "" }
+  //     ]
+  //   },
+  //   bricks: [
+  //     {
+  //       icon: "fontawesomeIcon",
+  //       rating: 5,
+  //       quote: "header txt",
+  //       attribution: "firstname lastname",
+  //       jobTitle: "software engineer"
+  //     }
+  //   ]
+  // },
   // {
   //   component: "rawhtml"
 
   // },
 
-  {
-    component: "singleimage",
-    devnotes: {
-      module: [26, 0],
-      generalNotes: "",
-      moduleSpecificNotes: [
-        { module: 0, note: "" }
-      ]
-    },
-    imageurl: "url",
-    altText: "randommtext",
-    linkurl: ""
+  // {
+  //   component: "singleimage",
+  //   devnotes: {
+  //     module: [26, 0],
+  //     generalNotes: "",
+  //     moduleSpecificNotes: [
+  //       { module: 0, note: "" }
+  //     ]
+  //   },
+  //   imageurl: "url",
+  //   altText: "randommtext",
+  //   linkurl: ""
 
-  },
+  // },
   {
     component: "split_ImgTxt",
     devnotes: {
@@ -332,6 +339,48 @@ const slices = ref([
   },
 
   {
+    component: "ContentPairsRepeater",
+    devnotes: {
+      module: [5, 10, 17, 27], //copied from another slice
+      generalNotes: "",
+      moduleSpecificNotes: [
+        { module: 0, note: "" }
+      ]
+    },
+    alt: ["lightbg"],
+    bricks: [
+      {
+        imgurl: "https://placekitten.com/640/360",
+        altText: "",
+        title: "Buy",
+        details: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
+        buttonlist: [
+          { url: "/url", text: "text" }
+        ]
+      },
+      {
+        imgurl: "https://placekitten.com/640/360",
+        altText: "",
+        title: "Manage",
+        details: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
+        buttonlist: [
+          { url: "/url", text: "text" }
+        ]
+      },
+      {
+        imgurl: "https://placekitten.com/640/360",
+        altText: "",
+        title: "Sell",
+        details: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
+        buttonlist: [
+          { url: "/url", text: "text" }
+        ]
+      }
+    ]
+
+  },
+
+  {
     component: "optionslice",
     devnotes: {
       module: [15, "38a", 41],
@@ -366,7 +415,7 @@ const slices = ref([
         { module: 0, note: "" }
       ]
     },
-    alt: ["lightbg"],
+    alt: ["lightbg","nogap-top"],
     bricks: {
       details: {
         title: "Inventory Management",
@@ -589,7 +638,7 @@ const slices = ref([
         { id: 0, note: "" }
       ]
     },
-    alt: ["nogap-bottom", "lavanderbg"],
+    alt: ["nogap", "lavanderBg"],
     embedCode: "",
     shortcode: "",
     content: ""
@@ -624,6 +673,10 @@ const slices = ref([
 
       <div v-if="slice.component == 'hero'">
         <hero :herocont="slice.bricks" />
+      </div>
+
+      <div v-else-if="slice.component == 'ContentPairsRepeater'">
+        <ContentPairsRepeater :pairsRepeaterCont="slice.bricks" />
       </div>
 
       <div v-else-if="slice.component == 'split_ImgTxt'">
@@ -670,8 +723,6 @@ const slices = ref([
   <footer class="container">
     <footerSlice />
   </footer>
-
-
 
 </template>
 

@@ -17,6 +17,7 @@ import footerSlice from "./components/footerSlice.vue";
 // import btnType3 from "./components/btnType3.vue";
 // import btnType4 from "./components/btnType4.vue";
 // import parallaxHero from "./components/parallaxHero.vue";
+import ContentPairsRepeater from "./components/ContentPairsRepeater.vue";
 
 import { ref } from 'vue';
 
@@ -235,6 +236,12 @@ const slices = ref([
       bgImageAltText: ""
     }
   },
+
+  {
+     component: ""
+  },
+
+ 
   // {
   //   component: "ctaHero",
   //   // component: "blockquoteSlider",
@@ -329,6 +336,48 @@ const slices = ref([
         { imgabUrl: "", top: 0, left: 0, height: "", width: "" },
       ]
     }
+  },
+
+  {
+    component: "ContentPairsRepeater",
+    devnotes: {
+      module: [5, 10, 17, 27], //copied from another slice
+      generalNotes: "",
+      moduleSpecificNotes: [
+        { module: 0, note: "" }
+      ]
+    },
+    alt: ["lightbg"],
+    bricks: [
+      {
+        imgurl: "https://placekitten.com/640/360",
+        altText: "",
+        title: "Buy",
+        details: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
+        buttonlist: [
+          { url: "/url", text: "text" }
+        ]
+      },
+      {
+        imgurl: "https://placekitten.com/640/360",
+        altText: "",
+        title: "Manage",
+        details: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
+        buttonlist: [
+          { url: "/url", text: "text" }
+        ]
+      },
+      {
+        imgurl: "https://placekitten.com/640/360",
+        altText: "",
+        title: "Sell",
+        details: "BuyChain is the end-to-end supply chain management software for the LBM industry that unifies and mobilizes your team, sales, inventory, and banking in order to meet the demands of an increasingly volatile market.",
+        buttonlist: [
+          { url: "/url", text: "text" }
+        ]
+      }
+    ]
+
   },
 
   {
@@ -624,6 +673,10 @@ const slices = ref([
 
       <div v-if="slice.component == 'hero'">
         <hero :herocont="slice.bricks" />
+      </div>
+
+      <div v-else-if="slice.component == 'ContentPairsRepeater'">
+        <ContentPairsRepeater :pairsRepeaterCont="slice.bricks" />
       </div>
 
       <div v-else-if="slice.component == 'split_ImgTxt'">
